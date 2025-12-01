@@ -1,0 +1,21 @@
+{
+  "name": "Festive Advent Calendar",
+  "short_name": "Advent 2025",
+  "description": "A cozy, custom advent calendar for the holidays.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1e252e",
+  "theme_color": "#992d37",
+  "icons": [
+    {
+      "src": "https://placehold.co/192x192/992d37/f4f2ee?text=A25",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://placehold.co/512x512/992d37/f4f2ee?text=A25",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
