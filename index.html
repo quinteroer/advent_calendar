@@ -295,6 +295,22 @@
             gap: 1rem; /* Reduced gap for small screens */
         }
 
+        /* Footer Style */
+        .app-footer {
+            margin-top: 2rem;
+            padding: 1rem 0;
+            width: 100%;
+            text-align: center;
+            font-family: 'Charmonman', cursive;
+            color: var(--color-gold);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(201, 176, 122, 0.3); /* Muted gold line */
+        }
+        .app-footer span {
+            color: var(--color-snow);
+            margin: 0 8px;
+        }
+
         /* Tablet and Desktop Styles */
         @media (min-width: 768px) {
             body {
@@ -352,6 +368,10 @@
         <div id="calendar-grid" class="calendar-grid">
             <!-- Doors will be injected here --></div>
     </div>
+
+    <footer class="app-footer max-w-lg mx-auto">
+        <p>&copy; 2025 Festive Calendar | Crafted with <span>&#10084;</span> for the Holidays</p>
+    </footer>
 
     <!-- Custom Modal for Messages --><div id="custom-modal" class="modal" onclick="document.getElementById('custom-modal').style.display = 'none'">
         <div class="modal-content" onclick="event.stopPropagation()">
