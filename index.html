@@ -197,6 +197,28 @@
                 transform: rotate(0deg); /* Keeps the dash horizontal */
                 margin: -5px 0; /* Tightens the spacing around the dash */
             }
+            .month-card, .day-card {
+            /* Frosted glass effect */
+            background: rgba(255, 255, 255, 0.6); 
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* Support for Safari/iPhone */
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(201, 176, 122, 0.8); /* Gold border */
+            box-shadow: 0 8px 32px rgba(74, 14, 14, 0.1);
+            transition: all 0.4s ease;
+            color: #4a0e0e; /* Dark text for light cards */
+        }
+
+        .month-card h2, .day-number {
+            color: #800f2f; /* Deep berry for titles */
+            font-weight: 700;
+        }
+
+        .month-card p, .day-label {
+            color: #4a0e0e;
+            opacity: 0.8;
+        }
         }
     </style>
 </head>
