@@ -184,10 +184,121 @@
     </div>
 
     <script>
-        // Keep your existing monthsConfig and JS logic as before
-        // (Ensuring countdownStart is set to Feb 1st for your testing)
-        const countdownStart = new Date(2026, 1, 1);
-        // ... (remaining script)
-    </script>
+    // 1. Configuration for all 13 months
+    const monthsConfig = {
+        1: { name: 'February 2026', emoji: '💝', startDay: 1, endDay: 15 },
+        2: { name: 'March', emoji: '🌸', startDay: 16, endDay: 46 },
+        3: { name: 'April', emoji: '🌷', startDay: 47, endDay: 76 },
+        4: { name: 'May', emoji: '🌹', startDay: 77, endDay: 107 },
+        5: { name: 'June', emoji: '☀️', startDay: 108, endDay: 137 },
+        6: { name: 'July', emoji: '🌺', startDay: 138, endDay: 168 },
+        7: { name: 'August', emoji: '🌻', startDay: 169, endDay: 199 },
+        8: { name: 'September', emoji: '🍂', startDay: 200, endDay: 229 },
+        9: { name: 'October', emoji: '🎃', startDay: 230, endDay: 260 },
+        10: { name: 'November', emoji: '🍁', startDay: 261, endDay: 290 },
+        11: { name: 'December', emoji: '❄️', startDay: 291, endDay: 321 },
+        12: { name: 'January 2027', emoji: '🎊', startDay: 322, endDay: 352 },
+        13: { name: 'February 2027', emoji: '💖', startDay: 353, endDay: 365 }
+    };
+
+    // 2. Identify which month to show from the URL (?month=X)
+    const urlParams = new URLSearchParams(window.location.search);
+    const monthNum = parseInt(urlParams.get('month')) || 1;
+    const config = monthsConfig[monthNum];
+
+    // 3. Grid Generation Logic
+    if (!config) {
+        console.error("Critical Error: Month configuration not found for index " + monthNum);
+    } else {
+        // Set Header Content
+        document.getElementById('monthTitle').textContent = config.name;
+        document.getElementById('monthEmoji').textContent = config.emoji;
+
+        const grid = document.getElementById('calendarGrid');
+        const today = new Date();
+        
+        // VCU Engineering Check: Ensure date starts Feb 1st 2026 for testing
+        const countdownStart = new Date(2026, 1, 1); 
+        
+        // Load progress from LocalStorage
+        const openedDays = JSON.parse(localStorage.getItem('openedLoveDays') || '{}');
+
+        for (let day = config.startDay; day <= config.endDay; day++) {
+            const cardDate = new Date(countdownStart);
+            cardDate.setDate(countdownStart.getDate() + day - 1);
+            
+            // Check if day is in the past or today
+            const isUnlocked = today >= cardDate; 
+            const card = document.createElement('div');
+            card.className = `day-card ${isUnlocked ? 'unlocked' : 'locked'}`;
+            
+            // Apply checked state if heart was previously clicked
+            if (openedDays[`day${day}`]) {
+                card.classList.add('checked');
+            }
+
+            // Modern Grid Content
+            card.innerHTML = `
+                <span class="check-mark">❤️</span>
+                <div class="day-number">${isUnlocked ? day : '🔒'}</div>
+                <div class="day-label">Day ${day}</div>
+            `;
+            
+            if (isUnlocked) {
+                // Safety logic: Check if loveData exists in calendar_data.js
+                const dayData = (typeof loveData !== 'undefined') ? loveData[`day${day}`] : null;
+                
+                card.onclick = () => {
+                    card.classList.add('checked');
+                    saveProgress(day);
+                    openModal(day, cardDate, dayData);
+                };
+            }
+            grid.appendChild(card);
+        }
+    }
+
+    // 4. Persistence & UI Functions
+    function saveProgress(dayNumber) {
+        const currentProgress = JSON.parse(localStorage.getItem('openedLoveDays') || '{}');
+        currentProgress[`day${dayNumber}`] = true;
+        localStorage.setItem('openedLoveDays', JSON.stringify(currentProgress));
+    }
+
+    function openModal(day, date, dayData) {
+        const modal = document.getElementById('modal');
+        modal.classList.add('active');
+        
+        document.getElementById('modalDay').textContent = "Day " + day;
+        document.getElementById('modalDate').textContent = date.toLocaleDateString('en-US', { 
+            weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
+        });
+
+        const messageEl = document.getElementById('modalMessage');
+        const playerEl = document.getElementById('musicPlayer');
+
+        if (dayData) {
+            messageEl.textContent = dayData.message;
+            playerEl.innerHTML = dayData.song_embed || "";
+        } else {
+            messageEl.textContent = "I can't wait to spend this year with you, Isabella. ❤️";
+            playerEl.innerHTML = "<p style='color: #800f2f; font-style: italic; opacity: 0.6;'>Song of the day coming soon... 🌹</p>";
+        }
+    }
+
+    function closeModal() { 
+        document.getElementById('modal').classList.remove('active');
+        // Stop music when closing modal
+        document.getElementById('musicPlayer').innerHTML = "";
+    }
+    
+    // Close modal if user clicks outside the glass box
+    window.onclick = function(event) {
+        const modal = document.getElementById('modal');
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+</script>
 </body>
 </html>
