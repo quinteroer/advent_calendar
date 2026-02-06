@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>🌹 365 Days of Love 🌹</title>
+    <meta name="theme-color" content="#ffcbd5">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Playfair+Display:ital,wght@1,700&display=swap');
 
@@ -46,19 +47,30 @@
             border: 1px solid rgba(255, 255, 255, 0.5);
             z-index: 100;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+        }
+
+        .back-button:active {
+            transform: scale(0.95);
+            background: rgba(255, 255, 255, 0.6);
         }
 
         .header {
             text-align: center;
             width: 100%;
-            padding-top: calc(60px + env(safe-area-inset-top)); 
-            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Added breathing room at the top */
+            padding-top: calc(80px + env(safe-area-inset-top)); 
+            margin-bottom: 50px;
         }
 
         .header h1 {
             font-size: 2.8rem;
             font-weight: 800;
             letter-spacing: -0.03em;
+            /* Rose Gold Gradient */
             background: linear-gradient(to bottom, #ffb3c1 0%, #a44a5f 50%, #5e1d2c 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -71,9 +83,11 @@
             gap: 20px;
             max-width: 1000px;
             width: 100%;
+            margin: 0 auto;
             padding-bottom: 80px;
         }
 
+        /* Day Card Styles */
         .day-card {
             aspect-ratio: 1;
             background: rgba(255, 255, 255, 0.35);
@@ -86,8 +100,37 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.3s ease;
+        }
+
+        /* Only swell unlocked cards on hover (Desktop) */
+        @media (hover: hover) {
+            .day-card.unlocked:hover {
+                transform: scale(1.08);
+                background: rgba(255, 255, 255, 0.5);
+                border-color: rgba(201, 176, 122, 0.5);
+            }
+        }
+
+        /* Immediate visual feedback on press (Mobile) */
+        .day-card:active {
+            transform: scale(0.95) !important;
+            transition: transform 0.1s;
+        }
+
+        /* Locked Card Overrides */
+        .day-card.locked {
+            background: rgba(0, 0, 0, 0.03);
+            border-color: rgba(255, 255, 255, 0.1);
+            color: rgba(74, 14, 14, 0.15);
+            cursor: not-allowed;
+            backdrop-filter: blur(4px);
+        }
+
+        .day-card.locked:hover, .day-card.locked:active {
+            transform: none !important;
+            box-shadow: none !important;
         }
 
         .check-mark {
@@ -101,21 +144,10 @@
 
         .day-card.checked .check-mark { opacity: 1; }
 
-        .day-card.unlocked { border-color: rgba(201, 176, 122, 0.5); }
-
-        .day-card:hover { transform: scale(1.08); background: rgba(255, 255, 255, 0.5); }
-
-        .day-card.locked {
-            background: rgba(0, 0, 0, 0.03);
-            border-color: rgba(255, 255, 255, 0.1);
-            color: rgba(74, 14, 14, 0.15);
-            cursor: not-allowed;
-            backdrop-filter: blur(4px);
-        }
-
         .day-number { font-size: 2.2rem; font-weight: 800; color: #800f2f; margin-bottom: -4px; }
         .day-label { font-size: 0.65rem; font-weight: 800; color: #4a0e0e; opacity: 0.6; text-transform: uppercase; letter-spacing: 0.1em; }
 
+        /* Liquid Glass Modal */
         .modal {
             display: none;
             position: fixed;
@@ -163,14 +195,26 @@
             from { opacity: 0; transform: scale(0.9) translateY(20px); }
             to { opacity: 1; transform: scale(1) translateY(0); }
         }
+
+        .shake {
+            animation: shake 0.2s ease-in-out 0s 2;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
     </style>
 </head>
 <body>
     <a href="index.html" class="back-button">← Back</a>
+    
     <div class="header">
         <div id="monthEmoji" style="font-size: 3.5rem; margin-bottom: 15px;"></div>
         <h1 id="monthTitle"></h1>
     </div>
+
     <div class="calendar-grid" id="calendarGrid"></div>
 
     <div class="modal" id="modal">
@@ -184,121 +228,107 @@
     </div>
 
     <script>
-    // 1. Configuration for all 13 months
-    const monthsConfig = {
-        1: { name: 'February 2026', emoji: '💝', startDay: 1, endDay: 15 },
-        2: { name: 'March', emoji: '🌸', startDay: 16, endDay: 46 },
-        3: { name: 'April', emoji: '🌷', startDay: 47, endDay: 76 },
-        4: { name: 'May', emoji: '🌹', startDay: 77, endDay: 107 },
-        5: { name: 'June', emoji: '☀️', startDay: 108, endDay: 137 },
-        6: { name: 'July', emoji: '🌺', startDay: 138, endDay: 168 },
-        7: { name: 'August', emoji: '🌻', startDay: 169, endDay: 199 },
-        8: { name: 'September', emoji: '🍂', startDay: 200, endDay: 229 },
-        9: { name: 'October', emoji: '🎃', startDay: 230, endDay: 260 },
-        10: { name: 'November', emoji: '🍁', startDay: 261, endDay: 290 },
-        11: { name: 'December', emoji: '❄️', startDay: 291, endDay: 321 },
-        12: { name: 'January 2027', emoji: '🎊', startDay: 322, endDay: 352 },
-        13: { name: 'February 2027', emoji: '💖', startDay: 353, endDay: 365 }
-    };
+        const monthsConfig = {
+            1: { name: 'February 2026', emoji: '💝', startDay: 1, endDay: 15 },
+            2: { name: 'March', emoji: '🌸', startDay: 16, endDay: 46 },
+            3: { name: 'April', emoji: '🌷', startDay: 47, endDay: 76 },
+            4: { name: 'May', emoji: '🌹', startDay: 77, endDay: 107 },
+            5: { name: 'June', emoji: '☀️', startDay: 108, endDay: 137 },
+            6: { name: 'July', emoji: '🌺', startDay: 138, endDay: 168 },
+            7: { name: 'August', emoji: '🌻', startDay: 169, endDay: 199 },
+            8: { name: 'September', emoji: '🍂', startDay: 200, endDay: 229 },
+            9: { name: 'October', emoji: '🎃', startDay: 230, endDay: 260 },
+            10: { name: 'November', emoji: '🍁', startDay: 261, endDay: 290 },
+            11: { name: 'December', emoji: '❄️', startDay: 291, endDay: 321 },
+            12: { name: 'January 2027', emoji: '🎊', startDay: 322, endDay: 352 },
+            13: { name: 'February 2027', emoji: '💖', startDay: 353, endDay: 365 }
+        };
 
-    // 2. Identify which month to show from the URL (?month=X)
-    const urlParams = new URLSearchParams(window.location.search);
-    const monthNum = parseInt(urlParams.get('month')) || 1;
-    const config = monthsConfig[monthNum];
+        const urlParams = new URLSearchParams(window.location.search);
+        const monthNum = parseInt(urlParams.get('month')) || 1;
+        const config = monthsConfig[monthNum];
 
-    // 3. Grid Generation Logic
-    if (!config) {
-        console.error("Critical Error: Month configuration not found for index " + monthNum);
-    } else {
-        // Set Header Content
-        document.getElementById('monthTitle').textContent = config.name;
-        document.getElementById('monthEmoji').textContent = config.emoji;
+        if (config) {
+            document.getElementById('monthTitle').textContent = config.name;
+            document.getElementById('monthEmoji').textContent = config.emoji;
 
-        const grid = document.getElementById('calendarGrid');
-        const today = new Date();
-        
-        // VCU Engineering Check: Ensure date starts Feb 1st 2026 for testing
-        const countdownStart = new Date(2026, 1, 1); 
-        
-        // Load progress from LocalStorage
-        const openedDays = JSON.parse(localStorage.getItem('openedLoveDays') || '{}');
+            const grid = document.getElementById('calendarGrid');
+            const today = new Date();
+            const countdownStart = new Date(2026, 1, 1); 
+            const openedDays = JSON.parse(localStorage.getItem('openedLoveDays') || '{}');
 
-        for (let day = config.startDay; day <= config.endDay; day++) {
-            const cardDate = new Date(countdownStart);
-            cardDate.setDate(countdownStart.getDate() + day - 1);
-            
-            // Check if day is in the past or today
-            const isUnlocked = today >= cardDate; 
-            const card = document.createElement('div');
-            card.className = `day-card ${isUnlocked ? 'unlocked' : 'locked'}`;
-            
-            // Apply checked state if heart was previously clicked
-            if (openedDays[`day${day}`]) {
-                card.classList.add('checked');
-            }
-
-            // Modern Grid Content
-            card.innerHTML = `
-                <span class="check-mark">❤️</span>
-                <div class="day-number">${isUnlocked ? day : '🔒'}</div>
-                <div class="day-label">Day ${day}</div>
-            `;
-            
-            if (isUnlocked) {
-                // Safety logic: Check if loveData exists in calendar_data.js
-                const dayData = (typeof loveData !== 'undefined') ? loveData[`day${day}`] : null;
+            for (let day = config.startDay; day <= config.endDay; day++) {
+                const cardDate = new Date(countdownStart);
+                cardDate.setDate(countdownStart.getDate() + day - 1);
                 
-                card.onclick = () => {
+                const isUnlocked = today >= cardDate; 
+                const card = document.createElement('div');
+                card.className = `day-card ${isUnlocked ? 'unlocked' : 'locked'}`;
+                
+                if (openedDays[`day${day}`]) {
                     card.classList.add('checked');
-                    saveProgress(day);
-                    openModal(day, cardDate, dayData);
-                };
+                }
+
+                card.innerHTML = `
+                    <span class="check-mark">❤️</span>
+                    <div class="day-number">${isUnlocked ? day : '🔒'}</div>
+                    <div class="day-label">Day ${day}</div>
+                `;
+
+                // Handle touch release to reset swell
+                card.ontouchend = () => { card.style.transform = "scale(1)"; };
+                
+                if (isUnlocked) {
+                    const dayData = (typeof loveData !== 'undefined') ? loveData[`day${day}`] : null;
+                    card.onclick = () => {
+                        card.classList.add('checked');
+                        saveProgress(day);
+                        openModal(day, cardDate, dayData);
+                    };
+                } else {
+                    card.onclick = () => {
+                        card.classList.add('shake');
+                        setTimeout(() => card.classList.remove('shake'), 500);
+                    };
+                }
+                grid.appendChild(card);
             }
-            grid.appendChild(card);
         }
-    }
 
-    // 4. Persistence & UI Functions
-    function saveProgress(dayNumber) {
-        const currentProgress = JSON.parse(localStorage.getItem('openedLoveDays') || '{}');
-        currentProgress[`day${dayNumber}`] = true;
-        localStorage.setItem('openedLoveDays', JSON.stringify(currentProgress));
-    }
+        function saveProgress(dayNumber) {
+            const currentProgress = JSON.parse(localStorage.getItem('openedLoveDays') || '{}');
+            currentProgress[`day${dayNumber}`] = true;
+            localStorage.setItem('openedLoveDays', JSON.stringify(currentProgress));
+        }
 
-    function openModal(day, date, dayData) {
-        const modal = document.getElementById('modal');
-        modal.classList.add('active');
+        function openModal(day, date, dayData) {
+            document.getElementById('modal').classList.add('active');
+            document.getElementById('modalDay').textContent = "Day " + day;
+            document.getElementById('modalDate').textContent = date.toLocaleDateString('en-US', { 
+                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
+            });
+
+            const messageEl = document.getElementById('modalMessage');
+            const playerEl = document.getElementById('musicPlayer');
+
+            if (dayData) {
+                messageEl.textContent = dayData.message;
+                playerEl.innerHTML = dayData.song_embed || "";
+            } else {
+                messageEl.textContent = "I can't wait to spend this year with you, Isabella. ❤️";
+                playerEl.innerHTML = "<p style='color: #800f2f; font-style: italic; opacity: 0.6;'>Song of the day coming soon... 🌹</p>";
+            }
+        }
+
+        function closeModal() { 
+            document.getElementById('modal').classList.remove('active');
+            document.getElementById('musicPlayer').innerHTML = "";
+        }
         
-        document.getElementById('modalDay').textContent = "Day " + day;
-        document.getElementById('modalDate').textContent = date.toLocaleDateString('en-US', { 
-            weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
-        });
-
-        const messageEl = document.getElementById('modalMessage');
-        const playerEl = document.getElementById('musicPlayer');
-
-        if (dayData) {
-            messageEl.textContent = dayData.message;
-            playerEl.innerHTML = dayData.song_embed || "";
-        } else {
-            messageEl.textContent = "I can't wait to spend this year with you, Isabella. ❤️";
-            playerEl.innerHTML = "<p style='color: #800f2f; font-style: italic; opacity: 0.6;'>Song of the day coming soon... 🌹</p>";
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target == modal) { closeModal(); }
         }
-    }
-
-    function closeModal() { 
-        document.getElementById('modal').classList.remove('active');
-        // Stop music when closing modal
-        document.getElementById('musicPlayer').innerHTML = "";
-    }
-    
-    // Close modal if user clicks outside the glass box
-    window.onclick = function(event) {
-        const modal = document.getElementById('modal');
-        if (event.target == modal) {
-            closeModal();
-        }
-    }
-</script>
+    </script>
 </body>
 </html>
