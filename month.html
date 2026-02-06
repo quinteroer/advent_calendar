@@ -115,6 +115,25 @@
             max-width: 500px;
             text-align: center;
         }
+        .check-mark {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 0.8em;
+            color: #f5e1a4; /* Champagne Gold */
+            filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .day-card.checked .check-mark {
+            opacity: 1;
+        }
+        
+        /* Optional: Dim the card slightly once checked so the focus is on new days */
+        .day-card.checked {
+            border-color: rgba(201, 176, 122, 0.5);
+        }
     </style>
 </head>
 <body>
