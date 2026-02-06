@@ -30,30 +30,28 @@
         }
 
         .header {
-            text-align: center;
-            width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            animation: fadeIn 1.2s ease-in;
-            /* Symmetry logic for iPhone cameras */
-            padding-top: calc(20px + env(safe-area-inset-top));
+            align-items: center; /* Forces all children to the horizontal center */
+            text-align: center;
+            width: 100%;
+            /* Accounting for Dynamic Island/Notch while staying symmetric */
+            padding-top: calc(20px + env(safe-area-inset-top)); 
             padding-left: 20px;
             padding-right: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
-
+        
         .header h1 {
-            font-size: 2.8em;
-            /* DEEP ROSE GOLD METALLIC GRADIENT */
+            width: 100%;
+            /* Use the metallic berry gradient we discussed */
             background: linear-gradient(to bottom, #ffb3c1 0%, #a44a5f 50%, #5e1d2c 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            /* Subtle glow to make it look metallic */
             filter: drop-shadow(2px 2px 4px rgba(128, 15, 47, 0.3));
             font-weight: 800;
-            letter-spacing: 1px;
             line-height: 1.2;
+            margin: 0 auto; /* Centers the block itself */
         }
 
         .header p {
