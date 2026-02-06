@@ -14,7 +14,6 @@
 
         body {
             font-family: 'Georgia', serif;
-            /* DEEP BURGUNDY GRADIENT */
             background: linear-gradient(135deg, #1a0507 0%, #4a0e0e 50%, #800f2f 100%);
             min-height: 100vh;
             display: flex;
@@ -47,7 +46,6 @@
 
         .header h1 {
             font-size: 2.8em;
-            /* METALLIC GOLD TEXT */
             background: linear-gradient(to bottom, #f5e1a4 0%, #c9b07a 50%, #a67c00 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -62,11 +60,10 @@
             width: 100%;
         }
 
-        /* THE CARD STYLING - UPDATED TO DEEP ROSE */
         .day-card {
             aspect-ratio: 1;
-            background: rgba(45, 11, 14, 0.9); /* Dark velvet red */
-            border: 2px solid #c9b07a; /* Gold border */
+            background: rgba(45, 11, 14, 0.9);
+            border: 2px solid #c9b07a;
             border-radius: 15px;
             display: flex;
             flex-direction: column;
@@ -83,13 +80,11 @@
             box-shadow: 0 0 20px rgba(201, 176, 122, 0.4);
         }
 
-        /* STYLE FOR UNLOCKED (BRIGHTER RED) */
         .day-card.unlocked {
             background: linear-gradient(135deg, #800f2f 0%, #c9184a 100%);
             box-shadow: 0 4px 15px rgba(0,0,0,0.4);
         }
 
-        /* STYLE FOR LOCKED (DARKER/FADED) */
         .day-card.locked {
             background: rgba(20, 5, 7, 0.85);
             border-color: rgba(201, 176, 122, 0.2);
@@ -100,7 +95,6 @@
         .day-number { font-size: 2em; font-weight: bold; }
         .day-label { font-size: 0.8em; opacity: 0.7; }
 
-        /* MODAL STYLING */
         .modal {
             display: none;
             position: fixed;
@@ -142,7 +136,6 @@
     </div>
 
     <script>
-        // Month configuration - exactly as before
         const monthsConfig = {
             1: { name: 'February 2026', emoji: '💝', startDay: 1, endDay: 15 },
             2: { name: 'March', emoji: '🌸', startDay: 16, endDay: 46 },
@@ -168,13 +161,12 @@
 
         const grid = document.getElementById('calendarGrid');
         const today = new Date();
-        const startDate = new Date(2026, 1, 1); // Feb 14
+        const countdownStart = new Date(2026, 1, 1); // Feb 14, 2026
 
         for (let day = config.startDay; day <= config.endDay; day++) {
-            const cardDate = new Date(startDate);
-            cardDate.setDate(startDate.getDate() + day - 1);
+            const cardDate = new Date(countdownStart);
+            cardDate.setDate(countdownStart.getDate() + day - 1);
             
-            // To see styles NOW while testing, you can change this to 'true'
             const isUnlocked = today >= cardDate; 
 
             const card = document.createElement('div');
@@ -182,19 +174,46 @@
             card.innerHTML = `<div class="day-number">${isUnlocked ? day : '🔒'}</div><div class="day-label">Day ${day}</div>`;
             
             if (isUnlocked) {
-                card.onclick = () => openModal(day, cardDate);
+                // Ensure data exists for the day, otherwise pass null
+                const dayData = typeof loveData !== 'undefined' ? loveData[`day${day}`] : null;
+                card.onclick = () => openModal(day, cardDate, dayData);
             }
             grid.appendChild(card);
         }
 
-        function openModal(day, date) {
+        function openModal(day, date, dayData) {
             document.getElementById('modal').classList.add('active');
             document.getElementById('modalDay').textContent = "Day " + day;
-            document.getElementById('modalDate').textContent = date.toDateString();
-            document.getElementById('modalMessage').textContent = "I can't wait to spend this year with you. ❤️";
+            document.getElementById('modalDate').textContent = date.toLocaleDateString('en-US', { 
+                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
+            });
+
+            // Set the message and music from the loveData dictionary
+            const messageEl = document.getElementById('modalMessage');
+            const playerEl = document.getElementById('musicPlayer');
+
+            if (dayData) {
+                messageEl.textContent = dayData.message;
+                playerEl.innerHTML = dayData.song_embed || "";
+            } else {
+                messageEl.textContent = "I can't wait to spend this year with you. ❤️";
+                playerEl.innerHTML = "<p style='color: #c9b07a; font-style: italic;'>Song of the day coming soon... 🌹</p>";
+            }
         }
 
-        function closeModal() { document.getElementById('modal').classList.remove('active'); }
+        function closeModal() { 
+            document.getElementById('modal').classList.remove('active');
+            // Stop the music when closing the modal
+            document.getElementById('musicPlayer').innerHTML = "";
+        }
+        
+        // Close modal on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
     </script>
 </body>
 </html>
