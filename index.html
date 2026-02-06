@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#1a0507">
     <title>💕 365 Days of Love 💕</title>
     <link rel="manifest" href="./manifest.json">
-    <meta name="theme-color" content="#ff6b9d">
+    <meta name="theme-color" content="#ffcbd5">
     <style>
         * {
             margin: 0;
@@ -16,27 +15,28 @@
 
         body {
             font-family: 'Georgia', serif;
-            /* Darker, moodier background: Deep Wine to Soft Rose */
-            background: linear-gradient(135deg, #1a0507 0%, #4a0e0e 50%, #800f2f 100%);
-            min-height: 100vh;
             background-image: url('background.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             min-height: 100vh;
-            
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px;
+            /* Safe area for Dynamic Island */
             padding-top: env(safe-area-inset-top);
-            color: #f8edeb; /* Soft cream text */
+            color: #4a0e0e; 
         }
 
         .header {
             text-align: center;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             animation: fadeIn 1.2s ease-in;
+            /* Symmetry logic for iPhone cameras */
             padding-top: calc(20px + env(safe-area-inset-top));
             padding-left: 20px;
             padding-right: 20px;
@@ -45,26 +45,31 @@
 
         .header h1 {
             font-size: 2.8em;
-            /* Gold Gradient */
+            /* Gold Gradient Title */
             background: linear-gradient(to bottom, #f5e1a4 0%, #c9b07a 50%, #a67c00 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            /* Darker shadow for readability on light pink */
+            /* Shadow makes gold pop on light pink background */
             filter: drop-shadow(2px 2px 3px rgba(74, 14, 14, 0.4));
             font-weight: 700;
             letter-spacing: 1px;
+            line-height: 1.2;
         }
 
         .header p {
             font-size: 1.2em;
-            color: #800f2f; /* Deep berry color */
+            color: #800f2f; /* Deep berry */
             font-style: italic;
             font-weight: 600;
+            margin-top: 10px;
         }
 
         .hearts-decoration {
             font-size: 2em;
-            margin: 20px 0;
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
             filter: drop-shadow(0 0 10px #c9184a);
             animation: heartBeat 2.5s ease-in-out infinite;
         }
@@ -79,6 +84,35 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        .date-range {
+            /* Apple Liquid Glass Effect */
+            background: rgba(255, 255, 255, 0.4); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 15px 25px;
+            border-radius: 30px;
+            margin: 0 auto 40px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+            max-width: 90%;
+            box-shadow: 0 4px 15px rgba(128, 15, 47, 0.1);
+        }
+
+        .date-range p {
+            color: #4a0e0e;
+            font-size: 1em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-transform: uppercase;
+        }
+
         .months-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -86,50 +120,40 @@
             max-width: 1200px;
             width: 100%;
             margin-bottom: 40px;
+            padding: 0 10px;
         }
 
         .month-card {
-            /* Darker card background for a "lustful" velvet feel */
-            background: rgba(45, 11, 14, 0.9);
+            /* Apple Liquid Glass Style */
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             border-radius: 20px;
             padding: 30px;
-            /* Gold border */
-            border: 2px solid #c9b07a;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 8px 32px rgba(128, 15, 47, 0.08);
             cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.4s ease;
             text-decoration: none;
-            color: inherit;
             display: block;
             position: relative;
             overflow: hidden;
-        }
-
-        /* The "Sweets" glow on hover */
-        .month-card::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at center, rgba(201, 176, 122, 0.15) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.4s;
+            text-align: center;
         }
 
         .month-card:hover {
-            transform: translateY(-8px) scale(1.02);
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.6);
+            border-color: #c9b07a; /* Gold highlight on hover */
             box-shadow: 0 15px 40px rgba(201, 176, 122, 0.2);
-            border-color: #f5e1a4;
-        }
-
-        .month-card:hover::after {
-            opacity: 1;
         }
 
         .month-card h2 {
             font-size: 1.8em;
-            color: #f5e1a4; /* Champagne gold */
+            color: #800f2f; /* Deep berry titles */
             margin-bottom: 10px;
             font-family: 'Times New Roman', serif;
+            font-weight: 700;
         }
 
         .month-card .month-emoji {
@@ -140,85 +164,27 @@
         }
 
         .month-card p {
-            color: #ffb3c1;
+            color: #4a0e0e;
             font-size: 1.1em;
             opacity: 0.8;
+            font-weight: 500;
         }
 
         .footer {
             margin-top: auto;
-            padding: 30px;
+            padding: 40px 20px;
             text-align: center;
-            color: #c9b07a;
+            color: #800f2f;
             font-style: italic;
+            width: 100%;
             border-top: 1px solid rgba(201, 176, 122, 0.2);
-            width: 80%;
         }
 
-        .date-range {
-            background: rgba(255, 255, 255, 0.4); /* Glassmorphism look */
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(201, 176, 122, 0.5);
-            padding: 15px 25px;
-            border-radius: 25px;
-            margin: 0 auto 30px auto;
-            display: flex;
-            flex-direction: column; /* Stacked for mobile */
-            align-items: center;
-            width: fit-content;
-            max-width: 85%;
-        }
-
-       .date-range p {
-            color: #4a0e0e;
-            font-size: 1em;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-        /* Mobile Stacked Logic */
+        /* Responsive Fixes */
         @media (max-width: 600px) {
-            .date-range {
-                border-radius: 20px; /* Square off the bubble slightly for the stack */
-                padding: 15px;
-            }
-
-            .date-range p {
-                flex-direction: column; /* Stacks the spans vertically */
-                font-size: 1em;
-                letter-spacing: 1px;
-                gap: 5px;
-            }
-
-            .date-divider {
-                transform: rotate(0deg); /* Keeps the dash horizontal */
-                margin: -5px 0; /* Tightens the spacing around the dash */
-            }
-            .month-card, .day-card {
-            /* Frosted glass effect */
-            background: rgba(255, 255, 255, 0.6); 
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); /* Support for Safari/iPhone */
-            border-radius: 20px;
-            padding: 30px;
-            border: 1px solid rgba(201, 176, 122, 0.8); /* Gold border */
-            box-shadow: 0 8px 32px rgba(74, 14, 14, 0.1);
-            transition: all 0.4s ease;
-            color: #4a0e0e; /* Dark text for light cards */
-        }
-
-        .month-card h2, .day-number {
-            color: #800f2f; /* Deep berry for titles */
-            font-weight: 700;
-        }
-
-        .month-card p, .day-label {
-            color: #4a0e0e;
-            opacity: 0.8;
-        }
+            .header h1 { font-size: 2.2em; }
+            .date-range { padding: 12px 20px; }
+            .month-card { padding: 20px; }
         }
     </style>
 </head>
