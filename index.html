@@ -3,636 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎄 Festive Advent Calendar 🌟</title>
-    <!-- PWA AND MOBILE SETUP -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="theme-color" content="#1e252e"> <!-- Sets color of the browser status bar -->
-    
-    <!-- FIX FOR iOS: Explicitly define Apple touch icons for reliable "Add to Home Screen" -->
-    <!-- ACTION REQUIRED: Replace '/app_icon.png' with the actual path to your 180x180 PNG file. -->
-    <link rel="apple-touch-icon" href="./app_icon.png"> 
-    <link rel="apple-touch-icon" sizes="152x152" href="./app_icon.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="./app_icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./app_icon.png">
-    
-    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
+    <title>💕 365 Days of Love 💕</title>
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#ff6b9d">
     <style>
-        /* Muted, Aesthetic Christmas Colors */
-        :root {
-            --color-red: #992d37; /* Deep Cranberry / Burgundy */
-            --color-green: #0e5e40; /* Deep Forest Green */
-            --color-gold: #c9b07a; /* Antique Brass / Muted Gold */
-            --color-dark: #1e252e; /* Deep Charcoal / Near Black */
-            --color-dark-accent: #282c35; /* Softened Dark Accent */
-            --color-snow: #f4f2ee; /* Creamy Off-white */
-            --color-error: #ff6b6b; /* Slightly brighter red for error contrast */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Mountains of Christmas', cursive; /* Festive header font */
-            /* Muted background gradient */
-            background: linear-gradient(135deg, var(--color-dark) 0%, #11151a 100%);
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ffeef8 0%, #ffe0f0 50%, #ffd4e5 100%);
             min-height: 100vh;
-            padding: 10px; 
-            color: var(--color-snow);
-            position: relative;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
-            overflow-y: auto; /* Enable vertical scrolling */
-            text-align: center; /* Centers block elements like the container and footer */
-        }
-
-        /* Snowflake animation */
-        .snowflake {
-            color: var(--color-snow); /* Snow color */
-            font-size: 1em;
-            font-family: Arial, sans-serif;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-            position: absolute;
-            top: -10%;
-            animation: fall linear infinite;
-            pointer-events: none;
-            user-select: none;
-            z-index: 1;
-        }
-
-        @keyframes fall {
-            to {
-                transform: translateY(100vh);
-            }
-        }
-
-        .calendar-container {
-            max-width: 1200px;
-            width: 95%; /* Adjusted width for mobile visibility */
-            /* FIX: Ensure container is centered with auto margins */
-            margin: 0 auto; 
-            /* REDUCED PADDING for mobile */
-            padding: 1rem; 
-            padding-top: 2rem; 
-            padding-bottom: 2rem; 
-            border-radius: 1.5rem; 
-            background-color: var(--color-dark-accent);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
-            border: 4px solid var(--color-gold); 
-            position: relative;
-            z-index: 10;
-        }
-
-        h1 {
-            font-family: 'Mountains of Christmas', cursive;
-            font-size: 2.5rem; 
-            line-height: 1;
-            color: var(--color-snow);
-            text-shadow: 0 0 8px rgba(201, 176, 122, 0.8);
-            margin-bottom: 0.5rem; 
-        }
-        #date-display {
-            font-family: 'Charmonman', cursive;
-            color: var(--color-gold);
-            font-size: 1rem; 
-        }
-
-        /* Styling for the Advent Door (Closed State) */
-        .advent-door {
-            aspect-ratio: 1 / 1;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            font-weight: bold;
-            font-size: 2rem; 
-            cursor: pointer;
-            transition: all 0.5s ease;
-            transform-style: preserve-3d;
-            position: relative;
-            border-radius: 0.75rem; 
-            user-select: none;
-            perspective: 1000px;
+            padding: 20px;
+            background-attachment: fixed;
         }
 
-        /* Front face - Closed Door */
-        .door-front {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-red);
-            border: 4px solid var(--color-gold); 
-            border-radius: 0.75rem;
-            backface-visibility: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: var(--color-snow);
-            z-index: 10;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-            transition: all 0.5s ease;
-        }
-        .door-front::before { /* Decorative ribbon */
-            content: '';
-            position: absolute;
-            width: 30%;
-            height: 100%;
-            background-color: var(--color-green);
-            transform: skewX(-20deg);
-            left: 35%;
-            box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
-        }
-        .door-front::after { /* Second ribbon */
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 30%;
-            background-color: var(--color-green);
-            transform: skewY(-20deg);
-            top: 35%;
-            box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
-        }
-        .door-front span { /* Make sure number is on top of ribbons */
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Back face - Opened Content (Now purely decorative and clean) */
-        .door-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-green);
-            border: 4px solid var(--color-gold);
-            border-radius: 0.75rem;
-            transform: rotateY(180deg);
-            backface-visibility: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: var(--color-snow);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-        
-        /* Decorative Back Face Content */
-        .door-back .door-inner-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-        .door-back .door-star {
-            position: absolute;
-            opacity: 0.3; /* Muted star */
-            font-size: 4rem; /* Large star on mobile */
-            z-index: 1;
-        }
-        .door-back .door-number-display {
-            position: relative;
-            z-index: 2;
-            font-size: 2rem; /* Consistent size with front on mobile */
-            font-weight: bold;
-            color: var(--color-snow);
-            font-family: 'Mountains of Christmas', cursive;
-        }
-
-        /* Opened State (Flipped) */
-        .door-opened {
-            transform: rotateY(180deg);
-            cursor: default;
-        }
-
-        /* Locked State (Future Day) */
-        .door-locked .door-front {
-            background-color: #5a6268;
-            color: #d1d5db;
-            cursor: not-allowed;
-            filter: grayscale(80%);
-            pointer-events: none;
-        }
-        .door-locked .door-front::before,
-        .door-locked .door-front::after {
-            background-color: #4a5568;
-        }
-
-        /* Hover Effect for Openable Doors */
-        .advent-door:not(.door-locked):not(.door-opened):hover .door-front {
-            background-color: #b33941;
-            box-shadow: 0 0 15px var(--color-gold); /* Reduced shadow size */
-            transform: scale(1.02);
-        }
-
-        /* Modal styling */
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            backdrop-filter: blur(5px);
-        }
-        
-        .modal-content {
-            padding: 1.5rem; /* Mobile modal padding */
-            border-radius: 1rem;
-            max-width: 85%; /* REDUCED to give snowflakes more visibility */
-            width: 400px;
-             /* Creamy, off-white background for vintage feel */
-            background: linear-gradient(to bottom right, var(--color-snow), #eae7e3);
-            color: var(--color-dark);
+        .header {
             text-align: center;
-            animation: fadeIn 0.4s ease-out;
-            border: 5px solid var(--color-gold);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-            position: relative;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in;
         }
-        .modal-content::before {
-            content: '🌟';
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 2.5em;
-            text-shadow: 0 0 10px var(--color-gold);
+
+        .header h1 {
+            font-size: 3em;
+            color: #c9184a;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            font-weight: 700;
         }
+
+        .header p {
+            font-size: 1.3em;
+            color: #ff4d6d;
+            font-style: italic;
+        }
+
+        .hearts-decoration {
+            font-size: 2em;
+            margin: 20px 0;
+            animation: heartBeat 2s ease-in-out infinite;
+        }
+
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+        }
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-50px) scale(0.8); }
-            to { opacity: 1; transform: translateY(0) scale(1); }
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        #modal-title {
-            font-family: 'Mountains of Christmas', cursive;
-            font-size: 2rem; 
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-        }
-        /* Style for the text content when no embed is present */
-        #modal-content-container p {
-            font-family: 'Charmonman', cursive;
-            font-size: 1rem; 
-            margin-top: 1rem;
-            color: var(--color-dark);
-        }
-        /* Container for the iframe/text, ensures good spacing */
-        #modal-content-container {
-            margin-bottom: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .modal-button {
-            background-color: var(--color-red);
-            color: var(--color-snow);
-            padding: 0.6rem 1.5rem; 
-            border-radius: 0.75rem;
-            font-size: 1rem;
-            margin-top: 0.5rem; /* Adjusted margin */
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-            display: inline-block; 
-            text-decoration: none; 
-            font-family: 'Mountains of Christmas', cursive;
-        }
-        .modal-button:hover {
-            background-color: #b33941; 
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-        }
-
-        /* Footer Style */
-        .app-footer {
-            margin-top: 2rem;
-            padding: 1rem 0;
-            width: 100%; /* Allow it to stretch */
-            text-align: center;
-            font-family: 'Charmonman', cursive;
-            color: var(--color-gold);
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(201, 176, 122, 0.3); /* Muted gold line */
-            /* FIX: Ensure footer is centered on wide screens, maximum width matches calendar max-width */
-            max-width: 1200px; 
-            margin: 0 auto;
-        }
-        .app-footer p {
-            margin: 0; /* Remove default paragraph margin */
-        }
-        .app-footer span {
-            color: var(--color-snow);
-            margin: 0 8px;
-        }
-
-
-        /* Responsive grid layout */
-        .calendar-grid {
+        .months-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns is good for phones */
-            gap: 1rem; /* Reduced gap for small screens */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            width: 100%;
+            margin-bottom: 40px;
         }
 
-        /* Tablet and Desktop Styles */
-        @media (min-width: 768px) {
-            body {
-                padding: 20px;
+        .month-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(201, 24, 74, 0.15);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .month-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 192, 203, 0.3) 0%, transparent 70%);
+            transform: scale(0);
+            transition: transform 0.5s ease;
+        }
+
+        .month-card:hover::before {
+            transform: scale(1);
+        }
+
+        .month-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(201, 24, 74, 0.25);
+        }
+
+        .month-card h2 {
+            font-size: 2em;
+            color: #c9184a;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .month-card .month-emoji {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .month-card p {
+            color: #666;
+            font-size: 1.1em;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            color: #c9184a;
+            font-style: italic;
+        }
+
+        .date-range {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 15px 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .date-range p {
+            color: #c9184a;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
             }
-            .calendar-container {
-                padding: 2.5rem;
-                border-radius: 2rem;
-                border: 5px solid var(--color-gold);
-                padding-top: 2.5rem; 
-                padding-bottom: 2.5rem;
-                /* Reset width for desktop */
-                width: 100%; 
+            .header p {
+                font-size: 1.1em;
             }
-            h1 {
-                font-size: 3.5rem;
-                margin-bottom: 1rem;
-            }
-            .advent-door {
-                font-size: 2.5rem; 
-                border-radius: 1rem;
-            }
-            .door-front {
-                border: 6px solid var(--color-gold);
-                border-radius: 1rem;
-            }
-            .door-back {
-                border: 6px solid var(--color-gold);
-                border-radius: 1rem;
-                padding: 1.5rem;
-            }
-            .door-back .door-star {
-                font-size: 6rem; 
-            }
-            .door-back .door-number-display {
-                font-size: 2.5rem; 
-            }
-            .calendar-grid {
-                grid-template-columns: repeat(5, 1fr);
-                gap: 2rem; 
-            }
-             #modal-title {
-                font-size: 2.5rem; 
-            }
-            #modal-content-container p {
-                font-size: 1.2rem; 
+            .months-container {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-
-    <div class="calendar-container">
-        <h1 class="text-center mb-2">
-            🎄 The Christmas Countdown 🌟
-        </h1>
-        <p id="date-display" class="text-xl text-center mb-6"></p>
-        
-        <div id="calendar-grid" class="calendar-grid">
-            <!-- Doors will be injected here --></div>
-    </div>
-    
-    <!-- Footer is now positioned correctly below the calendar container -->
-    <footer class="app-footer">
-        <p>&copy; Advent Calendar made by your Hubby | Made with <span>&#10084;</span> for Christmas</p>
-    </footer>
-
-    <!-- Custom Modal for Messages --><div id="custom-modal" class="modal" onclick="document.getElementById('custom-modal').style.display = 'none'">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <h3 id="modal-title" class="mb-4"></h3>
-            
-            <!-- NEW: Flexible container for text or iframe -->
-            <div id="modal-content-container" class="mb-6">
-                <!-- Content injected here by JS -->
-            </div>
-
-            <!-- Single close button for both song and text days -->
-            <button class="modal-button"
-                    onclick="document.getElementById('custom-modal').style.display = 'none'">
-                Ho Ho Ho!
-            </button>
-        </div>
+    <div class="header">
+        <h1>💕 365 Days of Love 💕</h1>
+        <div class="hearts-decoration">❤️ 💖 💕 💗 💝</div>
+        <p>A Year of Love, One Day at a Time</p>
     </div>
 
-    <script>
-        // --- GLOBAL VARIABLES & CONFIGURATION ---
-        const LOCAL_STORAGE_KEY = 'adventCalendarOpenedDoors';
-        const TODAY = new Date().getDate();
-        const CURRENT_MONTH = new Date().getMonth(); // 11 is December (0-indexed)
-        const IS_DECEMBER = CURRENT_MONTH === 11;
+    <div class="date-range">
+        <p>February 14, 2026 - February 13, 2027</p>
+    </div>
 
-        // --- CALENDAR DATA: Structured for TEXT or EMBEDDED IFRAME ---
-        const CALENDAR_DATA = [
-            /*01*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/white-christmas/1425235073"></iframe>' },
-            /*02*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/baby-its-cold-outside/209663242"></iframe>' },
-            /*03*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/underneath-the-tree/720861445"></iframe>' },
-            /*04*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/rockin-around-the-christmas-tree/1442732095"></iframe>' },
-            /*05*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/youre-a-mean-one-mr-grinch/1440922974"></iframe>' },
-            /*06*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/blue-christmas/676288368"></iframe>' },
-            /*07*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/ill-be-home-for-christmas-if-only-in-my-dreams/1440862313"></iframe>' },
-            /*08*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/jingle-bell-rock/1358462132"></iframe>' },
-            /*09*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/its-beginning-to-look-a-lot-like-christmas/669854831"></iframe>' },
-            /*10*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/o-holy-night/1293260132"></iframe>' },
-            /*11*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/carol-of-the-bells/877653101"></iframe>' },
-            /*12*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/winter-wonderland/1831874369"></iframe>' },
-            /*13*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/santa-claus-is-coming-to-town/1452949489"></iframe>' },
-            /*14*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/sleigh-ride/336037282"></iframe>' },
-            /*15*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/rudolph-the-red-nosed-reindeer/200299291"></iframe>' },
-            /*16*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/o-come-o-come-emmanuel/877653100"></iframe>' },
-            /*17*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/a-holly-jolly-christmas-single-version/1444213351"></iframe>' },
-            /*18*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/have-yourself-a-merry-little-christmas/1440862453"></iframe>' },
-            /*19*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/frosty-the-snowman/724739031"></iframe>' },
-            /*20*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/the-wexford-carol/292429080"></iframe>' },
-            /*21*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/like-its-christmas/1485796558"></iframe>' },
-            /*22*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/what-child-is-this/1293259845"></iframe>' },
-            /*23*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/its-the-most-wonderful-time-of-the-year/171434594"></iframe>' },
-            /*24*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/mary-did-you-know/1049043307"></iframe>' },
-            /*25*/{ type: 'link', content: '<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/joy-to-the-world-remastered-1999/1842245063"></iframe>' }
-        ];
+    <div class="months-container">
+        <a href="month.html?month=1" class="month-card">
+            <span class="month-emoji">💝</span>
+            <h2>February 2026</h2>
+            <p>Days 1-15 | Where our journey begins</p>
+        </a>
 
+        <a href="month.html?month=2" class="month-card">
+            <span class="month-emoji">🌸</span>
+            <h2>March</h2>
+            <p>Days 16-46 | Spring blooms with love</p>
+        </a>
 
-        // --- UI UTILITY FUNCTIONS ---
+        <a href="month.html?month=3" class="month-card">
+            <span class="month-emoji">🌷</span>
+            <h2>April</h2>
+            <p>Days 47-76 | April showers of affection</p>
+        </a>
 
-        function showModal(title, message, isError = false) {
-            const modal = document.getElementById('custom-modal');
-            const titleElement = document.getElementById('modal-title');
-            // Reference the content container
-            const contentContainer = document.getElementById('modal-content-container');
-            const closeButton = document.querySelector('.modal-button');
-            
-            // Clear previous content
-            contentContainer.innerHTML = ''; 
+        <a href="month.html?month=4" class="month-card">
+            <span class="month-emoji">🌹</span>
+            <h2>May</h2>
+            <p>Days 77-107 | May flowers of devotion</p>
+        </a>
 
-            // Set Title and Color
-            titleElement.textContent = title;
-            titleElement.style.color = isError ? 'var(--color-error)' : 'var(--color-green)';
+        <a href="month.html?month=5" class="month-card">
+            <span class="month-emoji">☀️</span>
+            <h2>June</h2>
+            <p>Days 108-137 | Summer love shines bright</p>
+        </a>
 
-            // --- Determine Content Type and Configure Modal ---
-            if (typeof message === 'object' && message !== null) {
-                if (message.type === 'link') {
-                    // Inject raw iframe code for song player
-                    contentContainer.innerHTML = message.content;
-                    closeButton.textContent = 'Close Player';
-                    
-                } else { // type: 'text'
-                    // Inject text wrapped in a <p> tag to apply modal styling
-                    contentContainer.innerHTML = `<p>${message.content}</p>`;
-                    closeButton.textContent = 'Ho Ho Ho!';
-                }
-            } else { 
-                // Simple error message (isError=true)
-                contentContainer.innerHTML = `<p>${message}</p>`;
-                closeButton.textContent = 'Dismiss';
-            }
+        <a href="month.html?month=6" class="month-card">
+            <span class="month-emoji">🌺</span>
+            <h2>July</h2>
+            <p>Days 138-168 | Warm hearts, warm days</p>
+        </a>
 
-            // Set the close handler for the single button
-            closeButton.onclick = () => document.getElementById('custom-modal').style.display = 'none';
+        <a href="month.html?month=7" class="month-card">
+            <span class="month-emoji">🌻</span>
+            <h2>August</h2>
+            <p>Days 169-199 | Golden moments together</p>
+        </a>
 
-            modal.style.display = 'flex';
-        }
+        <a href="month.html?month=8" class="month-card">
+            <span class="month-emoji">🍂</span>
+            <h2>September</h2>
+            <p>Days 200-229 | Falling for you again</p>
+        </a>
 
-        // --- LOCAL STORAGE DATA HANDLING ---
+        <a href="month.html?month=9" class="month-card">
+            <span class="month-emoji">🎃</span>
+            <h2>October</h2>
+            <p>Days 230-260 | Cozy love in autumn</p>
+        </a>
 
-        function loadDoorState() {
-            try {
-                const storedState = localStorage.getItem(LOCAL_STORAGE_KEY);
-                return storedState ? JSON.parse(storedState) : {};
-            } catch (e) {
-                console.error("Error loading state from localStorage:", e);
-                return {};
-            }
-        }
+        <a href="month.html?month=10" class="month-card">
+            <span class="month-emoji">🍁</span>
+            <h2>November</h2>
+            <p>Days 261-290 | Grateful for you</p>
+        </a>
 
-        function saveDoorState(day) {
-            try {
-                const openedDoors = loadDoorState();
-                openedDoors[day] = true;
-                localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(openedDoors));
-            } catch (e) {
-                console.error("Error saving state to localStorage:", e);
-                showModal("Save Error", "Failed to save progress locally. Your progress may not be remembered.", true);
-            }
-        }
+        <a href="month.html?month=11" class="month-card">
+            <span class="month-emoji">❄️</span>
+            <h2>December</h2>
+            <p>Days 291-321 | Winter warmth with you</p>
+        </a>
 
+        <a href="month.html?month=12" class="month-card">
+            <span class="month-emoji">🎊</span>
+            <h2>January 2027</h2>
+            <p>Days 322-352 | New year, same love</p>
+        </a>
 
-        // --- CALENDAR LOGIC & RENDERING ---
+        <a href="month.html?month=13" class="month-card">
+            <span class="month-emoji">💖</span>
+            <h2>February 2027</h2>
+            <p>Days 353-365 | Full circle of love</p>
+        </a>
+    </div>
 
-        function handleDoorClick(day, element, openedDoors) {
-            // 1. Check if it's December
-            if (!IS_DECEMBER) {
-                 showModal("It's Not Christmas Yet!", `It's currently ${new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}. Waiting for December...`, true);
-                 return;
-            }
-
-            // 2. Check if the door is locked
-            if (day > TODAY) {
-                showModal("Door is Locked", `You must wait until Day ${day} to open this door!`, true);
-                return;
-            }
-
-            // 3. Check if already opened
-            if (openedDoors[day]) {
-                // If already opened, show the modal content again (but don't save or flip again)
-                const content = CALENDAR_DATA[day - 1];
-                const title = `Day ${day} Already Revealed!`;
-                showModal(title, content); 
-                return;
-            }
-
-            // 4. Open the door and save state
-            element.classList.add('door-opened');
-            saveDoorState(day);
-
-            const content = CALENDAR_DATA[day - 1];
-            const title = `Day ${day} Revealed!`;
-
-            // Wait for the flip animation, then show the message
-            setTimeout(() => {
-                showModal(title, content); // Pass the content OBJECT
-            }, 300);
-        }
-
-        function renderCalendar(openedDoors) {
-            const grid = document.getElementById('calendar-grid');
-            grid.innerHTML = ''; // Clear existing doors
-
-            // Update header
-            document.getElementById('date-display').textContent = `Today is Day ${TODAY} of December!`;
-
-            for (let i = 1; i <= 25; i++) {
-                const day = i;
-                const isLocked = day > TODAY && IS_DECEMBER; // Only lock if it's December and day is in the future
-                const isOpened = openedDoors[day];
-                
-                const doorWrapper = document.createElement('div');
-                doorWrapper.className = `advent-door ${isLocked ? 'door-locked' : ''} ${isOpened ? 'door-opened' : ''}`;
-                doorWrapper.setAttribute('data-day', day);
-
-                // Add click listener
-                doorWrapper.addEventListener('click', () => handleDoorClick(day, doorWrapper, openedDoors));
-
-                // Front (Closed) Face
-                const front = document.createElement('div');
-                front.className = 'door-front';
-                front.innerHTML = `<span>${day}</span>`;
-
-                // Back (Opened) Face - PURELY DECORATIVE WITH PROMINENT NUMBER
-                const back = document.createElement('div');
-                back.className = 'door-back';
-                back.innerHTML = `
-                    <div class="door-inner-content">
-                        <span class="door-star">⭐</span>
-                        <span class="door-number-display">${day}</span>
-                    </div>
-                `;
-
-
-                doorWrapper.appendChild(front);
-                doorWrapper.appendChild(back);
-                grid.appendChild(doorWrapper);
-            }
-        }
-
-        // --- SNOWFLAKE EFFECT ---
-        function createSnowflake() {
-            const snowflake = document.createElement('div');
-            snowflake.classList.add('snowflake');
-            snowflake.innerHTML = '❅'; // Or '❄' '❆' '✨'
-
-            snowflake.style.left = Math.random() * 100 + 'vw';
-            snowflake.style.animationDuration = Math.random() * 3 + 4 + 's'; // 4-7 seconds
-            snowflake.style.animationDelay = Math.random() * 5 + 's';
-            snowflake.style.opacity = Math.random();
-            snowflake.style.fontSize = Math.random() * 1 + 0.8 + 'em'; // 0.8em to 1.8em
-            document.body.appendChild(snowflake);
-
-            // Remove snowflake after it falls
-            snowflake.addEventListener('animationend', () => {
-                snowflake.remove();
-            });
-        }
-
-        // --- INITIALIZATION ---
-        window.onload = function() {
-            // Update header date display
-            if (!IS_DECEMBER) {
-                document.getElementById('date-display').textContent = `Today is ${new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}. Waiting for December...`;
-            } else {
-                 document.getElementById('date-display').textContent = `Today is Day ${TODAY} of December!`;
-            }
-
-            // Load state and render
-            const openedDoors = loadDoorState();
-            renderCalendar(openedDoors);
-
-            // Start snowflake generation
-            setInterval(createSnowflake, 300); // Create a new snowflake every 300ms
-        }
-
-    </script>
+    <div class="footer">
+        <p>💕 Made with endless love for you 💕</p>
+        <p>Every day is a gift with you in my life</p>
+    </div>
 </body>
 </html>
