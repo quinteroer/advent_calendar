@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌹 365 Days of Love 🌹</title>
-    <link rel="manifest" href="./manifest.json">
-    <meta name="theme-color" content="#800f2f">
     <style>
         * {
             margin: 0;
@@ -15,9 +13,12 @@
 
         body {
             font-family: 'Georgia', serif;
-            /* Matching the deep burgundy/rose gradient from index.html */
+            /* DEEP BURGUNDY GRADIENT */
             background: linear-gradient(135deg, #1a0507 0%, #4a0e0e 50%, #800f2f 100%);
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding: 20px;
             background-attachment: fixed;
             color: #f8edeb;
@@ -34,15 +35,8 @@
             border-radius: 25px;
             font-weight: 600;
             border: 1px solid #c9b07a;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
             z-index: 100;
-        }
-
-        .back-button:hover {
-            background: #c9b07a;
-            color: #1a0507;
-            transform: translateY(-2px);
+            transition: 0.3s;
         }
 
         .header {
@@ -51,171 +45,105 @@
         }
 
         .header h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
+            /* METALLIC GOLD TEXT */
             background: linear-gradient(to bottom, #f5e1a4 0%, #c9b07a 50%, #a67c00 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
-        }
-
-        .header .month-emoji {
-            font-size: 3.5em;
-            margin-bottom: 10px;
-            filter: drop-shadow(0 0 10px rgba(201, 24, 74, 0.5));
+            font-weight: 700;
         }
 
         .calendar-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            gap: 15px;
+            gap: 20px;
             max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
+            width: 100%;
         }
 
+        /* THE CARD STYLING - UPDATED TO DEEP ROSE */
         .day-card {
             aspect-ratio: 1;
-            background: rgba(45, 11, 14, 0.9);
-            border: 1px solid #c9b07a;
+            background: rgba(45, 11, 14, 0.9); /* Dark velvet red */
+            border: 2px solid #c9b07a; /* Gold border */
             border-radius: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.4s ease;
             position: relative;
-            overflow: hidden;
             color: #f5e1a4;
         }
 
         .day-card:hover {
-            transform: scale(1.08);
-            box-shadow: 0 0 20px rgba(201, 176, 122, 0.3);
-            border-color: #f5e1a4;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(201, 176, 122, 0.4);
         }
 
+        /* STYLE FOR UNLOCKED (BRIGHTER RED) */
+        .day-card.unlocked {
+            background: linear-gradient(135deg, #800f2f 0%, #c9184a 100%);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        /* STYLE FOR LOCKED (DARKER/FADED) */
         .day-card.locked {
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(20, 5, 7, 0.85);
             border-color: rgba(201, 176, 122, 0.2);
-            color: rgba(245, 225, 164, 0.2);
+            color: rgba(245, 225, 164, 0.15);
             cursor: not-allowed;
-            filter: grayscale(100%);
         }
 
-        .day-number {
-            font-size: 1.8em;
-            font-weight: bold;
-            z-index: 1;
-        }
+        .day-number { font-size: 2em; font-weight: bold; }
+        .day-label { font-size: 0.8em; opacity: 0.7; }
 
-        .day-label {
-            font-size: 0.8em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            opacity: 0.7;
-            z-index: 1;
-        }
-
-        /* Modal - Deep Red Theme */
+        /* MODAL STYLING */
         .modal {
             display: none;
             position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.85);
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(10px);
             z-index: 1000;
             align-items: center;
             justify-content: center;
-            backdrop-filter: blur(8px);
         }
-
         .modal.active { display: flex; }
-
         .modal-content {
             background: #2d0b0e;
             border: 2px solid #c9b07a;
-            border-radius: 20px;
             padding: 30px;
-            max-width: 500px;
+            border-radius: 20px;
             width: 90%;
-            max-height: 90vh;
-            overflow-y: auto;
-            position: relative;
-            box-shadow: 0 10px 50px rgba(0,0,0,0.8);
+            max-width: 500px;
             text-align: center;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 15px; right: 15px;
-            background: none; border: none;
-            font-size: 2em; color: #c9b07a;
-            cursor: pointer;
-        }
-
-        .modal-header h2 {
-            color: #f5e1a4;
-            font-family: 'Times New Roman', serif;
-            font-size: 2.2em;
-            margin-bottom: 5px;
-        }
-
-        .modal-header .date {
-            color: #ffb3c1;
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-
-        .music-container {
-            margin: 20px 0;
-            border-radius: 12px;
-            overflow: hidden;
-            background: rgba(0,0,0,0.3);
-        }
-
-        .modal-body {
-            color: #f8edeb;
-            line-height: 1.6;
-            font-size: 1.2em;
-            margin-top: 20px;
-            white-space: pre-wrap;
-        }
-
-        @media (max-width: 768px) {
-            .calendar-grid { grid-template-columns: repeat(3, 1fr); }
-            .header h1 { font-size: 1.8em; }
         }
     </style>
 </head>
 <body>
     <a href="index.html" class="back-button">← Back</a>
-
     <div class="header">
-        <div class="month-emoji" id="monthEmoji"></div>
+        <div id="monthEmoji" style="font-size: 3em;"></div>
         <h1 id="monthTitle"></h1>
     </div>
-
     <div class="calendar-grid" id="calendarGrid"></div>
 
     <div class="modal" id="modal">
         <div class="modal-content">
-            <button class="modal-close" onclick="closeModal()">×</button>
-            <div class="modal-header">
-                <h2 id="modalDay"></h2>
-                <p class="date" id="modalDate"></p>
-            </div>
-            
-            <div id="musicContainer" class="music-container"></div>
-            
-            <div class="modal-body" id="modalMessage"></div>
-            <div style="margin-top:25px; font-size: 1.5em;">🌹✨🌹</div>
+            <h2 id="modalDay" style="color: #f5e1a4; font-size: 2em;"></h2>
+            <p id="modalDate" style="color: #ffb3c1; font-style: italic; margin-bottom: 20px;"></p>
+            <div id="musicPlayer"></div>
+            <p id="modalMessage" style="color: #f8edeb; margin-top: 20px; line-height: 1.6;"></p>
+            <button onclick="closeModal()" style="margin-top: 20px; background: #c9b07a; padding: 10px 20px; border: none; border-radius: 20px; cursor: pointer;">Close</button>
         </div>
     </div>
 
     <script>
+        // Month configuration - exactly as before
         const monthsConfig = {
-            1: { name: 'February', emoji: '💝', startDay: 1, endDay: 15 },
+            1: { name: 'February 2026', emoji: '💝', startDay: 1, endDay: 15 },
             2: { name: 'March', emoji: '🌸', startDay: 16, endDay: 46 },
             3: { name: 'April', emoji: '🌷', startDay: 47, endDay: 76 },
             4: { name: 'May', emoji: '🌹', startDay: 77, endDay: 107 },
@@ -231,81 +159,41 @@
         };
 
         const urlParams = new URLSearchParams(window.location.search);
-        const monthNumber = parseInt(urlParams.get('month')) || 1;
-        const monthConfig = monthsConfig[monthNumber];
+        const monthNum = parseInt(urlParams.get('month')) || 1;
+        const config = monthsConfig[monthNum];
 
-        document.getElementById('monthTitle').textContent = monthConfig.name;
-        document.getElementById('monthEmoji').textContent = monthConfig.emoji;
+        document.getElementById('monthTitle').textContent = config.name;
+        document.getElementById('monthEmoji').textContent = config.emoji;
 
-        const calendarGrid = document.getElementById('calendarGrid');
+        const grid = document.getElementById('calendarGrid');
         const today = new Date();
-        const startCountdownDate = new Date(2026, 1, 14); // Feb 14, 2026
+        const startDate = new Date(2026, 1, 14); // Feb 14
 
-        async function init() {
-            // Fetch the JSON once
-            let loveData = {};
-            try {
-                const response = await fetch('./calendar_data.json');
-                loveData = await response.json();
-            } catch (e) { console.log("JSON not found yet, using placeholders"); }
+        for (let day = config.startDay; day <= config.endDay; day++) {
+            const cardDate = new Date(startDate);
+            cardDate.setDate(startDate.getDate() + day - 1);
+            
+            // To see styles NOW while testing, you can change this to 'true'
+            const isUnlocked = today >= cardDate; 
 
-            for (let day = monthConfig.startDay; day <= monthConfig.endDay; day++) {
-                const dayCard = document.createElement('div');
-                const dayDate = new Date(startCountdownDate);
-                dayDate.setDate(startCountdownDate.getDate() + day - 1);
-                
-                const isUnlocked = today >= dayDate;
-                dayCard.className = `day-card ${isUnlocked ? 'unlocked' : 'locked'}`;
-                
-                dayCard.innerHTML = `
-                    <div class="day-number">${isUnlocked ? day : '🔒'}</div>
-                    <div class="day-label">Day ${day}</div>
-                `;
-                
-                if (isUnlocked) {
-                    dayCard.onclick = () => openModal(day, dayDate, loveData[`day${day}`]);
-                }
-                calendarGrid.appendChild(dayCard);
+            const card = document.createElement('div');
+            card.className = `day-card ${isUnlocked ? 'unlocked' : 'locked'}`;
+            card.innerHTML = `<div class="day-number">${isUnlocked ? day : '🔒'}</div><div class="day-label">Day ${day}</div>`;
+            
+            if (isUnlocked) {
+                card.onclick = () => openModal(day, cardDate);
             }
+            grid.appendChild(card);
         }
 
-        function openModal(dayNumber, date, dayData) {
-            const modal = document.getElementById('modal');
-            document.getElementById('modalDay').textContent = `Day ${dayNumber}`;
-            document.getElementById('modalDate').textContent = date.toLocaleDateString('en-US', { 
-                weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' 
-            });
-
-            // Set Message from JSON or fallback
-            const message = dayData ? dayData.message : "My love for you grows every day. ❤️";
-            document.getElementById('modalMessage').textContent = message;
-
-            // Set Song from JSON or fallback
-            const musicContainer = document.getElementById('musicContainer');
-            if (dayData && dayData.song_link) {
-                musicContainer.innerHTML = `
-                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" 
-                        frameborder="0" height="175" 
-                        style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" 
-                        src="${dayData.song_link}">
-                    </iframe>`;
-            } else {
-                musicContainer.innerHTML = `<p style="padding:20px; color:#c9b07a; font-style:italic;">Surprise song coming soon... 🌹</p>`;
-            }
-
-            modal.classList.add('active');
+        function openModal(day, date) {
+            document.getElementById('modal').classList.add('active');
+            document.getElementById('modalDay').textContent = "Day " + day;
+            document.getElementById('modalDate').textContent = date.toDateString();
+            document.getElementById('modalMessage').textContent = "I can't wait to spend this year with you. ❤️";
         }
 
-        function closeModal() {
-            document.getElementById('modal').classList.remove('active');
-            document.getElementById('musicContainer').innerHTML = ''; // Stop music when closing
-        }
-
-        document.getElementById('modal').addEventListener('click', (e) => {
-            if (e.target.id === 'modal') closeModal();
-        });
-
-        init();
+        function closeModal() { document.getElementById('modal').classList.remove('active'); }
     </script>
 </body>
 </html>
