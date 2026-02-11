@@ -455,61 +455,38 @@
     </div>
 
     <div class="footer">
-        <p>💕 Made with endless love for Isabella 💕</p>
+        <p>💕 It is a priviledge to be yours 💕</p>
     </div>
     <div class="install-prompt" id="installPrompt">
         <div class="install-prompt-emoji">💝</div>
         <div class="install-prompt-title">365 Days of Love</div>
-        <div class="install-prompt-text">Install this app to unlock your year of love with Isabella!</div>
+        <div class="install-prompt-text">
+            Download the profile, then go to <br>
+            <strong>Settings > Search for Profile Downloaded</strong> to install!
+        </div>
         <div class="install-prompt-buttons">
-            <button class="install-btn" id="installBtn">Install App</button>
+            <a href="install.mobileconfig" class="install-btn" id="installBtn" download>
+                Download Profile
+            </a>
         </div>
     </div>
     
     <script>
-        // Install Prompt Logic
-        let deferredPrompt;
         const installPrompt = document.getElementById('installPrompt');
-        const installBtn = document.getElementById('installBtn');
-        const dismissBtn = document.getElementById('dismissBtn');
-
         const isInstalled = window.matchMedia('(display-mode: standalone)').matches;
 
-        // In browser mode, always show the prompt immediately
+        // Check if the app is being viewed in the browser or as an installed app
         if (!isInstalled) {
-            installPrompt.classList.add('show');
+            // Show the prompt if we are in the browser
+            installPrompt.style.display = 'flex';
+        } else {
+            // Hide it if she's already opened it from her home screen
+            installPrompt.style.display = 'none';
         }
 
-        // Listen for the install event
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-        });
-
-        // Handle install button click
-        installBtn.addEventListener('click', async () => {
-            if (!deferredPrompt) {
-                // For iOS - show manual instructions
-                if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-                    alert('To install:\n1. Tap the Share button (square with arrow)\n2. Scroll down and tap "Add to Home Screen"\n3. Tap "Add" in the top right');
-                }
-                return;
-            }
-            
-            deferredPrompt.prompt();
-            const { outcome } = await deferredPrompt.userChoice;
-            
-            if (outcome === 'accepted') {
-                console.log('User accepted install! 💝');
-            }
-            
-            deferredPrompt = null;
-        });
-
-        // Remove dismiss button functionality - force install
-        dismissBtn.addEventListener('click', () => {
-            // Show a gentle message instead
-            alert('Please install the app to access 365 Days of Love! 💕');
+        // Optional: Log when she clicks download just for your debugging
+        document.getElementById('installBtn').addEventListener('click', () => {
+            console.log('Profile download initiated! 💝');
         });
     </script>
 </body>
