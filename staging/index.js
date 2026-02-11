@@ -45,3 +45,18 @@ window.onload = checkWelcome;
 document.getElementById('installBtn').addEventListener('click', () => {
     console.log('Profile download initiated! 💝');
 });
+
+window.addEventListener('pageshow', function(event) {
+    // If the page is loaded from the cache (like swiping back)
+    if (event.persisted) {
+        const allCards = document.querySelectorAll('.month-card');
+        allCards.forEach(card => {
+            // Remove the animation class so they aren't hidden
+            card.classList.remove('exit-animation');
+            // Force a quick style reset to ensure they're clickable
+            card.style.opacity = "1";
+            card.style.transform = "translateZ(0) scale(1)";
+        });
+        console.log("♻️ Navigation state reset");
+    }
+});
