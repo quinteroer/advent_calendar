@@ -11,6 +11,7 @@
     --glass-border: rgba(255, 255, 255, 0.6);
     --header-gradient: linear-gradient(to bottom, #ffb3c1 0%, #a44a5f 50%, #5e1d2c 100%);
     --modal-overlay: rgba(74, 14, 14, 0.6);
+    --bg-image: url('assets/background.jpg')
 }
 
 [data-theme="dark"] {
@@ -21,6 +22,7 @@
     --glass-border: rgba(255, 143, 163, 0.2);
     --header-gradient: linear-gradient(to bottom, #ff8fa3 0%, #a44a5f 50%, #2d0a11 100%);
     --modal-overlay: rgba(0, 0, 0, 0.8);
+    --bg-image: url('assets/background_night.jpg')
 }
 
 /* ===========================
@@ -48,7 +50,7 @@ body {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: url('assets/background.jpg') center / cover no-repeat;
+    background: var(--bg-image) center / cover no-repeat;
     opacity: 0.6; /* Slightly lower opacity makes text pop more */
     transition: opacity 0.8s ease;
 }
