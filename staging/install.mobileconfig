@@ -32,7 +32,7 @@
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>365 Days of Love Installer</string>
+    <string>365</string>
     <key>PayloadIdentifier</key>
     <string>com.elias.isabella.installer</string>
     <key>PayloadRemovalDisallowed</key>
