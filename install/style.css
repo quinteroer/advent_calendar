@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/* ===========================
+   1. THEME VARIABLES - COLORS ONLY
+=========================== */
+:root {
+    /* ============================================
+       FONT SETTINGS - EDIT THESE TO CHANGE FONTS
+       ============================================ */
+    --title-font: "Montserrat", sans-serif;           /* Main header "Our First Year" */
+    --subtitle-font: 'Allura', cursive;                /* Subheader "A Year of Love" */
+    --body-font: "Montserrat", sans-serif;             /* Regular body text */
+    --script-font: 'Allura', cursive;                  /* Decorative script text */
+    /* ============================================ */
+    
+    --header-optical-sizing: auto;
+    --header-weight: 100;
+    --header-style: normal;
+    --bg-color: #ffcbd5;
+    --card-bg: rgba(255, 255, 255, 0.3);
+    --card-bg-hover: rgba(255, 255, 255, 0.2);
+    --text-primary: #4a0e0e;
+    --text-accent: #800f2f;
+    --glass-border: rgba(255, 255, 255, 0.6);
+    --glass-border-hover: rgba(201, 176, 122, 0.8);
+    --header-gradient: linear-gradient(to bottom, #ffb3c1 0%, #a44a5f 50%, #5e1d2c 100%);
+    --modal-overlay: rgba(74, 14, 14, 0.6);
+    --bg-image: url('assets/background.jpg');
+    --date-range-bg: rgba(255, 255, 255, 0.3);
+    --footer-border: rgba(201, 176, 122, 0.2);
+    --card-shadow: rgba(128, 15, 47, 0.06);
+    --date-shadow: rgba(128, 15, 47, 0.05);
+
+    --glass-bg: rgba(255, 255, 255, 0.15);
+    --glass-reflection: rgba(255, 255, 255, 0.1);
+    --glass-shine: rgba(255, 255, 255, 1);
+    --glass-edge: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] {
+    --bg-color: #2d0a11;
+    --card-bg: rgba(45, 10, 17, 0.2);
+    --card-bg-hover: rgba(45, 10, 17, 0.85);
+    --text-primary: #ffccd8;
+    --text-accent: #ffffff;
+    --glass-border: rgba(255, 143, 163, 0.2);
+    --glass-border-hover: rgba(255, 143, 163, 0.4);
+    --header-gradient: linear-gradient(to bottom, #ff8fa3 0%, #ffc1c1 50%, #ffa2b5 100%);
+    --modal-overlay: rgba(0, 0, 0, 0.8);
+    --bg-image: url('assets/background_night.jpg');
+    --date-range-bg: rgba(45, 10, 17, 0.01);
+    --footer-border: rgba(255, 143, 163, 0.2);
+    --card-shadow: rgba(0, 0, 0, 0.15);
+    --date-shadow: rgba(0, 0, 0, 0.1);
+
+    --glass-bg: rgba(0, 0, 0, 0.3); /* Darker tinted glass */
+    --glass-reflection: rgba(255, 255, 255, 0.05);
+    --glass-shine: rgba(255, 255, 255, 0.3); /* Dimmer shine for dark mode */
+    --glass-edge: rgba(255, 255, 255, 0.2);
+}
+
+/* ===========================
+   2. GLOBAL STYLES
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: var(--body-font);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: env(safe-area-inset-top);
+    color: var(--text-primary);
+}
+
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    /* Apply the entry animation here */
+    animation: pageFlyIn 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#page-wrapper.page-exit {
+    animation: pageFlyOut 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
+}
+
+.bg-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2000;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
+}
+
+/* ===========================
+   3. HEADER - EXACT ORIGINAL SIZING
+=========================== */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* 12% of the screen height + the Dynamic Island height */
+    padding-top: calc(12vh + env(safe-area-inset-top)); 
+    padding-left: 20px;
+    padding-right: 20px;
+    /* Added space between the title and the first card */
+    margin-bottom: 60px; 
+    animation: fadeIn 1.2s ease-out;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    /* Extra room below the title block */
+    margin-bottom: 10px; 
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--title-font);
+    font-optical-sizing: var(--header-optical-sizing);
+    font-weight: var(--header-weight);
+    font-style: var(--header-style);
+}
+
+.header h1 {
+    font-size: clamp(2.8rem, 10vw, 4.5rem);
+    font-weight: 300;
+    line-height: 0.95;
+    letter-spacing: 0.05em;
+    color: var(--text-accent);
+    filter: drop-shadow(0 4px 6px rgba(74, 14, 14, 0.2));
+}
+
+.side-heart {
+    font-size: 2.2rem;
+    filter: drop-shadow(0 0 10px rgba(201, 24, 74, 0.3));
+    animation: heartBeat 2.5s ease-in-out infinite;
+}
+
+.header p {
+    font-family: var(--subtitle-font);
+    font-size: 1.3rem;
+    color: var(--text-accent);
+    font-style: italic;
+    font-weight: 700;
+    /* Extra space below the "A Year of Love" text */
+    margin-top: 25px; 
+    opacity: 0.9;
+}
+
+/* ===========================
+   4. DATE RANGE - EXACT ORIGINAL SIZING
+=========================== */
+.date-range {
+    background: var(--date-range-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    padding: 18px 35px;
+    border-radius: 40px;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    max-width: 90%;
+    box-shadow: 0 10px 25px var(--date-shadow);
+}
+
+.date-range p {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    gap: 8px;
+}
+
+/* ===========================
+   5. MONTHS CONTAINER - EXACT ORIGINAL SIZING
+=========================== */
+
+.months-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 0 10px;
+}
+
+.month-card {
+    border-radius: 28px;
+    padding: 40px 30px;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 12px 40px var(--card-shadow);
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.month-card:hover {
+    transform: scale(1.03) translateY(-5px);
+    background: var(--card-bg-hover);
+    border-color: var(--glass-border-hover);
+}
+
+.month-card .month-emoji {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.month-card:hover .month-emoji {
+    transform: scale(1.1);
+}
+
+.month-card h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-accent);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.month-card p {
+    color: var(--text-primary);
+    font-size: 1rem;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+.month-card.exit-animation {
+    animation: appleFlyOut 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    pointer-events: none; /* Prevents double-clicks during animation */
+}
+
+/* ===========================
+   6. FOOTER - EXACT ORIGINAL SIZING
+=========================== */
+.footer {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--text-accent);
+    font-style: italic;
+    font-weight: 600;
+    opacity: 0.8;
+    border-top: 1px solid var(--footer-border);
+    width: 110%;
+}
+
+/* ===========================
+   7. BACK BUTTON
+=========================== */
+.back-button {
+    /* --- Visibility & Opacity --- */
+    --glass-bg: rgba(255, 255, 255, 0.45); 
+    
+    /* Sticky ensures it stays at the bottom during scroll */
+    position: sticky !important;
+    bottom: 20px !important;
+    
+    /* --- Stretching Logic --- */
+    align-self: center; /* Centers the stretched bar */
+    width: calc(100%) !important; /* Full width minus 20px margins on each side */
+    max-width: 1000px; /* Prevents it from getting too wide on desktop */
+    
+    /* Layout Adjustments */
+    margin-top: -35px !important; 
+    margin-bottom: 20px;
+    z-index: 9999;
+
+    /* Glass Engine Styles */
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    
+    color: var(--text-accent);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px; /* Slightly less rounded for a bar look */
+    
+    /* Text Centering */
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+    display: block; /* Required for width to take effect */
+    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .back-button {
+    --glass-bg: rgba(0, 0, 0, 0.6);
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    --glass-bg: rgba(255, 255, 255, 0.55);
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    background: var(--card-bg-hover);
+    border-color: var(--glass-border-hover);
+    box-shadow: 0 6px 20px rgba(128, 15, 47, 0.15);
+}
+
+/* ===========================
+   8. CALENDAR GRID (for month pages)
+=========================== */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 60px;
+}
+
+.day-card {
+    aspect-ratio: 1;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    z-index: 2000;
+    animation: appleFlyIn 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) backwards;
+}
+
+.day-card .check-mark {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
+
+.day-card.checked .check-mark {
+    opacity: 1;
+}
+
+.day-card.unlocked {
+    background: var(--card-bg);
+}
+
+.day-card.unlocked:hover {
+    transform: scale(1.08);
+    background: var(--card-bg-hover);
+}
+
+.day-card.locked {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.day-card.shake {
+    animation: shake 0.5s;
+}
+
+.lock-icon {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    opacity: 0.6;
+}
+
+.day-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-accent);
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.day-label {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+}
+
+/* ===========================
+   9. MODALS
+=========================== */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: transparent;
+    backdrop-filter: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 20px;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-card,
+.modal-content {
+    margin-top:-20px;
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    padding: 40px 30px;
+    border-radius: 35px;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: modalBlurIn 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.modal-card h2,
+.modal-content h2 {
+    color: var(--text-accent);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.modal-card p,
+.modal-content p {
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.modal-emoji {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#modalDay {
+    color: var(--text-accent);
+}
+
+#modalDate {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+#musicPlayer {
+    margin: 20px 0;
+}
+
+#modalMessage {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.hint {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* ===========================
+   10. BUTTONS & PROMPTS
+=========================== */
+.install-btn,
+.close-btn {
+    background: transparent;
+    color: var(--text-accent);
+    border: 2px solid var(--glass-border);
+    border-color: rgba(255,255,255,0.5);
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.install-btn:hover,
+.close-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(128, 15, 47, 0.4);
+}
+
+.install-prompt {
+    display: none;
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 50px 40px;
+    text-align: center;
+    max-width: 450px;
+    margin: 20px;
+}
+
+.install-prompt-emoji {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.install-prompt-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-accent);
+    margin-bottom: 15px;
+}
+
+.install-prompt-text {
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.install-prompt-buttons {
+    margin-top: 20px;
+}
+
+/* ===========================
+   11. PWA INSTALL LOGIC
+=========================== */
+@media not all and (display-mode: standalone) {
+    .install-prompt {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+@media (display-mode: standalone) {
+    .install-prompt {
+        display: none !important;
+    }
+}
+
+/* ===========================
+   12. ANIMATIONS - EXACT ORIGINAL
+=========================== */
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+@keyframes modalBlurIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes modalBlurOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+        filter: blur(10px);
+    }
+}
+
+@keyframes pageFlyIn {
+    0% {
+        opacity: 0;
+        transform: translateZ(200px) translateY(20px);
+        filter: blur(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0) translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes pageFlyOut {
+    0% {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+        filter: blur(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateZ(-300px) scale(0.9);
+        filter: blur(15px);
+    }
+}
+
+/* ===========================
+   13. MOBILE RESPONSIVE - EXACT ORIGINAL
+=========================== */
+@media (max-width: 600px) {
+    .header { 
+        /* Match the 12vh airy look on mobile too */
+        padding-top: calc(12vh + env(safe-area-inset-top)); 
+    }
+    .header h1 { 
+        /* Keep the title slightly smaller so it doesn't wrap weirdly on small screens */
+        font-size: 2.8rem; 
+    }
+    .date-range { 
+        padding: 12px 20px; 
+    }
+    .months-container { 
+        grid-template-columns: 1fr; 
+    }
+    .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 25px;
+        width: 100%;
+        max-width: 1000px;
+        margin-bottom: 60px;
+        
+        /* 3D Settings */
+        perspective: 1000px; /* This creates the "depth" field */
+        perspective-origin: center;
+    }
+    .back-button {
+        top: calc(env(safe-area-inset-top) + 10px);
+        left: 10px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* --- THE GLASS ENGINE --- */
+/* --- THE DYNAMIC GLASS ENGINE --- */
+.glass {
+  /* Default blur is 5px, but can be overridden by specific cards */
+  
+  position: relative;
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  
+  border: 1px solid var(--glass-edge);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px var(--card-shadow), 
+              inset 0 4px 20px rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 2000;
+}
+
+.glass::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--glass-reflection);
+  border-radius: 2rem;
+  backdrop-filter: blur(1px);
+  box-shadow: inset -10px -8px 0px -11px var(--glass-shine),
+              inset 0px -9px 0px -8px var(--glass-shine);
+  opacity: 0.6;
+  z-index: -1;
+  filter: blur(1px) brightness(115%);
+  pointer-events: none;
+  transition: box-shadow 0.5s ease;
+}
