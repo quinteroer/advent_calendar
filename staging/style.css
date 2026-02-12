@@ -19,8 +19,8 @@
     --header-weight: 100;
     --header-style: normal;
     --bg-color: #ffcbd5;
-    --card-bg: rgba(255, 255, 255, 0.0);
-    --card-bg-hover: rgba(255, 255, 255, 0.55);
+    --card-bg: rgba(255, 255, 255, 0.3);
+    --card-bg-hover: rgba(255, 255, 255, 0.2);
     --text-primary: #4a0e0e;
     --text-accent: #800f2f;
     --glass-border: rgba(255, 255, 255, 0.6);
@@ -41,7 +41,7 @@
 
 [data-theme="dark"] {
     --bg-color: #2d0a11;
-    --card-bg: rgba(45, 10, 17, 0.01);
+    --card-bg: rgba(45, 10, 17, 0.2);
     --card-bg-hover: rgba(45, 10, 17, 0.85);
     --text-primary: #ffccd8;
     --text-accent: #ffffff;
@@ -104,7 +104,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
+    z-index: -2000;
     background-image: var(--bg-image);
     background-size: cover;
     background-position: center;
@@ -207,6 +207,7 @@ body {
 /* ===========================
    5. MONTHS CONTAINER - EXACT ORIGINAL SIZING
 =========================== */
+
 .months-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -218,9 +219,6 @@ body {
 }
 
 .month-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
     border-radius: 28px;
     padding: 40px 30px;
     border: 1px solid var(--glass-border);
@@ -352,10 +350,6 @@ body {
 }
 
 .day-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid var(--glass-border);
     aspect-ratio: 1;
     border-radius: 24px;
     display: flex;
@@ -366,6 +360,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     cursor: pointer;
+    z-index: 2000;
     animation: appleFlyIn 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) backwards;
 }
 
@@ -376,6 +371,7 @@ body {
     font-size: 1.2rem;
     opacity: 0;
     transition: opacity 0.3s ease;
+    
 }
 
 .day-card.checked .check-mark {
@@ -685,20 +681,21 @@ body {
 /* --- THE GLASS ENGINE --- */
 /* --- THE DYNAMIC GLASS ENGINE --- */
 .glass {
+  /* Default blur is 5px, but can be overridden by specific cards */
+  
   position: relative;
-  background: var(--glass-bg); /* Controlled by theme */
-  backdrop-filter: blur(5px) saturate(180%);
-  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
   
   border: 1px solid var(--glass-edge);
   border-radius: 2rem;
   padding: 1.5rem;
-  
   box-shadow: 0 8px 32px var(--card-shadow), 
               inset 0 4px 20px rgba(255, 255, 255, 0.1);
-  
-  color: var(--text-primary); /* Uses your existing theme text color */
-  transition: background 0.5s ease, border 0.5s ease;
+  color: var(--text-primary);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 2000;
 }
 
 .glass::after {
