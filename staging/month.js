@@ -84,19 +84,35 @@ function saveProgress(dayNumber) {
 function openModal(day, date, dayData) {
     document.getElementById('modal').classList.add('active');
     document.getElementById('modalDay').textContent = "Day " + day;
-    document.getElementById('modalDate').textContent = date.toLocaleDateString('en-US', { 
-        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
-    });
 
     const messageEl = document.getElementById('modalMessage');
     const playerEl = document.getElementById('musicPlayer');
 
-    if (dayData) {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const themeParam = isDark ? "theme=dark" : "theme=light";
+
+    if (dayData && dayData.src) {
         messageEl.textContent = dayData.message;
-        playerEl.innerHTML = dayData.song_embed || "";
+        
+        // Build the URL with the theme parameter
+        const baseSrc = dayData.src;
+        const themedSrc = baseSrc.includes('?') 
+            ? `${baseSrc}&${themeParam}` 
+            : `${baseSrc}?${themeParam}`;
+
+        // Reconstruct the iframe using the themed source
+        playerEl.innerHTML = `
+            <iframe 
+                allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" 
+                frameborder="0" 
+                height="175" 
+                style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" 
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+                src="${themedSrc}">
+            </iframe>`;
     } else {
         messageEl.textContent = "I can't wait to spend this year with you, Isabella. ❤️";
-        playerEl.innerHTML = "<p style='color: #800f2f; font-style: italic; opacity: 0.6;'>Song of the day coming soon... 🌹</p>";
+        playerEl.innerHTML = "<p>Song of the day coming soon... 🌹</p>";
     }
 }
 

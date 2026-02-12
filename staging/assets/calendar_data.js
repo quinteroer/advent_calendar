@@ -1,7 +1,8 @@
 const loveData = {
     "day1": {
         "title": "Day 1",
-        "message": "Happy Valentines, Belly. You're the love of my life and I am so full of happiness that I can be in your life. Being your boyfriend and your best friend is the highest privelidge.",
+        "message": "",
+        "src": "https://embed.music.apple.com/us/song/dreams/1440735258",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/dreams/1440735258\"></iframe>",
         "PID": "187334B8D4A975CF",
         "metadata": {
@@ -15,6 +16,7 @@ const loveData = {
     "day2": {
         "title": "Day 2",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/linger/1440735263",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/linger/1440735263\"></iframe>",
         "PID": "66698A8D729E2612",
         "metadata": {
@@ -28,6 +30,7 @@ const loveData = {
     "day3": {
         "title": "Day 3",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/cant-help-falling-in-love/217635636",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/cant-help-falling-in-love/217635636\"></iframe>",
         "PID": "D3349DAB0CC60180",
         "metadata": {
@@ -41,6 +44,7 @@ const loveData = {
     "day4": {
         "title": "Day 4",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/perfect/1193701400",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/perfect/1193701400\"></iframe>",
         "PID": "643000C5FCC16DC1",
         "metadata": {
@@ -54,6 +58,7 @@ const loveData = {
     "day5": {
         "title": "Day 5",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/a-thousand-years/467980724",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/a-thousand-years/467980724\"></iframe>",
         "PID": "B3DE988D089EEC36",
         "metadata": {
@@ -67,6 +72,7 @@ const loveData = {
     "day6": {
         "title": "Day 6",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/across-the-stars-love-theme-from-star-wars-attack-of-the-clones/1375804796",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/across-the-stars-love-theme-from-star-wars-attack-of-the-clones/1375804796\"></iframe>",
         "PID": "35C28FC916CDDA6B",
         "metadata": {
@@ -80,6 +86,7 @@ const loveData = {
     "day7": {
         "title": "Day 7",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/all-the-small-things/1440840510",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/all-the-small-things/1440840510\"></iframe>",
         "PID": "4911C9D3EE59438C",
         "metadata": {
@@ -93,6 +100,7 @@ const loveData = {
     "day8": {
         "title": "Day 8",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/married-life/1440617708",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/married-life/1440617708\"></iframe>",
         "PID": "FD5A435EFA1647A0",
         "metadata": {
@@ -106,6 +114,7 @@ const loveData = {
     "day9": {
         "title": "Day 9",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/until-i-found-you/1581702085",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/until-i-found-you/1581702085\"></iframe>",
         "PID": "0C5ADB2C1893FFBC",
         "metadata": {
@@ -119,6 +128,7 @@ const loveData = {
     "day10": {
         "title": "Day 10",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/wouldnt-it-be-nice/725824013",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/wouldnt-it-be-nice/725824013\"></iframe>",
         "PID": "0189533633E44D34",
         "metadata": {
@@ -132,6 +142,7 @@ const loveData = {
     "day11": {
         "title": "Day 11",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/l-o-v-e/264618217",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/l-o-v-e/264618217\"></iframe>",
         "PID": "E3128CEBC3E9553D",
         "metadata": {
@@ -145,6 +156,7 @@ const loveData = {
     "day12": {
         "title": "Day 12",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/adore-you/1485802970",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/adore-you/1485802970\"></iframe>",
         "PID": "46A274F646D7A0F1",
         "metadata": {
@@ -158,6 +170,7 @@ const loveData = {
     "day13": {
         "title": "Day 13",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/golden/1485802966",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/golden/1485802966\"></iframe>",
         "PID": "C72A638342323598",
         "metadata": {
@@ -171,6 +184,7 @@ const loveData = {
     "day14": {
         "title": "Day 14",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/what-makes-you-beautiful/482734113",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/what-makes-you-beautiful/482734113\"></iframe>",
         "PID": "B15B656F382B25C4",
         "metadata": {
@@ -184,6 +198,7 @@ const loveData = {
     "day15": {
         "title": "Day 15",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/steal-my-girl/914556572",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/steal-my-girl/914556572\"></iframe>",
         "PID": "2DE82945441CD2F5",
         "metadata": {
@@ -197,6 +212,7 @@ const loveData = {
     "day16": {
         "title": "Day 16",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/story-of-my-life/695318302",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/story-of-my-life/695318302\"></iframe>",
         "PID": "E9270BE5CC8382CE",
         "metadata": {
@@ -210,6 +226,7 @@ const loveData = {
     "day17": {
         "title": "Day 17",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/i-want-to-write-you-a-song/1040171626",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/i-want-to-write-you-a-song/1040171626\"></iframe>",
         "PID": "41931C38AEDC956E",
         "metadata": {
@@ -223,6 +240,7 @@ const loveData = {
     "day18": {
         "title": "Day 18",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/all-of-me/1441844542",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/all-of-me/1441844542\"></iframe>",
         "PID": "383C9340A4809E3E",
         "metadata": {
@@ -236,6 +254,7 @@ const loveData = {
     "day19": {
         "title": "Day 19",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/enchanted-taylors-version/1690840535",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/enchanted-taylors-version/1690840535\"></iframe>",
         "PID": "5669B1B05268E853",
         "metadata": {
@@ -249,6 +268,7 @@ const loveData = {
     "day20": {
         "title": "Day 20",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/check-yes-juliet/1297082405",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/check-yes-juliet/1297082405\"></iframe>",
         "PID": "3AA9710F81F972EB",
         "metadata": {
@@ -262,6 +282,7 @@ const loveData = {
     "day21": {
         "title": "Day 21",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/dear-maria-count-me-in/502522511",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/dear-maria-count-me-in/502522511\"></iframe>",
         "PID": "E864BC074FACFFCB",
         "metadata": {
@@ -275,6 +296,7 @@ const loveData = {
     "day22": {
         "title": "Day 22",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/landslide/593328216",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/landslide/593328216\"></iframe>",
         "PID": "CDA557B3D00D19B7",
         "metadata": {
@@ -288,6 +310,7 @@ const loveData = {
     "day23": {
         "title": "Day 23",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/purple-rain/1746833484",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/purple-rain/1746833484\"></iframe>",
         "PID": "E4EA5B95F847096B",
         "metadata": {
@@ -301,6 +324,7 @@ const loveData = {
     "day24": {
         "title": "Day 24",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/running-up-that-hill-a-deal-with-god-2018-remaster/1675560578",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/running-up-that-hill-a-deal-with-god-2018-remaster/1675560578\"></iframe>",
         "PID": "3EB5FC87FAAE7E42",
         "metadata": {
@@ -314,6 +338,7 @@ const loveData = {
     "day25": {
         "title": "Day 25",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/upside-down/1443160098",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/upside-down/1443160098\"></iframe>",
         "PID": "39F18380ECB965D0",
         "metadata": {
@@ -327,6 +352,7 @@ const loveData = {
     "day26": {
         "title": "Day 26",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/the-neverending-story/691264357",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/the-neverending-story/691264357\"></iframe>",
         "PID": "3DC619A52392BB0B",
         "metadata": {
@@ -340,6 +366,7 @@ const loveData = {
     "day27": {
         "title": "Day 27",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/thunder-radio-mix/276649804",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/thunder-radio-mix/276649804\"></iframe>",
         "PID": "1845B7B984F7DC2D",
         "metadata": {
@@ -353,6 +380,7 @@ const loveData = {
     "day28": {
         "title": "Day 28",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/flicker/1799175585",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/flicker/1799175585\"></iframe>",
         "PID": "F5E77FA7B4A76A8F",
         "metadata": {
@@ -366,6 +394,7 @@ const loveData = {
     "day29": {
         "title": "Day 29",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/cant-have-mine-find-you-a-girl/1688469124",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/cant-have-mine-find-you-a-girl/1688469124\"></iframe>",
         "PID": "7B1577FBACA78999",
         "metadata": {
@@ -379,6 +408,7 @@ const loveData = {
     "day30": {
         "title": "Day 30",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/spin-you-around-124/1727612051",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/spin-you-around-124/1727612051\"></iframe>",
         "PID": "41D161A7CF9E6E0B",
         "metadata": {
@@ -392,6 +422,7 @@ const loveData = {
     "day31": {
         "title": "Day 31",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/kiss-from-a-rose/302788219",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/kiss-from-a-rose/302788219\"></iframe>",
         "PID": "92230997EAA985E2",
         "metadata": {
@@ -405,6 +436,7 @@ const loveData = {
     "day32": {
         "title": "Day 32",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/four-letters/1691075130",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/four-letters/1691075130\"></iframe>",
         "PID": "AE0FD32E04F37350",
         "metadata": {
@@ -418,6 +450,7 @@ const loveData = {
     "day33": {
         "title": "Day 33",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/aliens-exist/1440840155",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/aliens-exist/1440840155\"></iframe>",
         "PID": "50CEC423F538E2E6",
         "metadata": {
@@ -431,6 +464,7 @@ const loveData = {
     "day34": {
         "title": "Day 34",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/anthem/1440840971",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/anthem/1440840971\"></iframe>",
         "PID": "A00A1732CEB866B0",
         "metadata": {
@@ -444,6 +478,7 @@ const loveData = {
     "day35": {
         "title": "Day 35",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/you-belong-with-me-taylors-version/1552791558",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/you-belong-with-me-taylors-version/1552791558\"></iframe>",
         "PID": "77930AD56A66F483",
         "metadata": {
@@ -457,6 +492,7 @@ const loveData = {
     "day36": {
         "title": "Day 36",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/love-story-taylors-version/1552791427",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/love-story-taylors-version/1552791427\"></iframe>",
         "PID": "9029AD17F93E54FB",
         "metadata": {
@@ -470,6 +506,7 @@ const loveData = {
     "day37": {
         "title": "Day 37",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/blackbird/1441133834",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/blackbird/1441133834\"></iframe>",
         "PID": "72FDD7EFA76F9387",
         "metadata": {
@@ -483,6 +520,7 @@ const loveData = {
     "day38": {
         "title": "Day 38",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/here-comes-the-sun/1441164589",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/here-comes-the-sun/1441164589\"></iframe>",
         "PID": "D17CB5C41784F2C9",
         "metadata": {
@@ -496,6 +534,7 @@ const loveData = {
     "day39": {
         "title": "Day 39",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/while-my-guitar-gently-weeps/1441133644",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/while-my-guitar-gently-weeps/1441133644\"></iframe>",
         "PID": "B0988139C065B953",
         "metadata": {
@@ -509,6 +548,7 @@ const loveData = {
     "day40": {
         "title": "Day 40",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/lucy-in-the-sky-with-diamonds/1441164852",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/lucy-in-the-sky-with-diamonds/1441164852\"></iframe>",
         "PID": "163C348784905AD6",
         "metadata": {
@@ -522,6 +562,7 @@ const loveData = {
     "day41": {
         "title": "Day 41",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/penny-lane/1441163777",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/penny-lane/1441163777\"></iframe>",
         "PID": "AC7B32F7778DB208",
         "metadata": {
@@ -535,6 +576,7 @@ const loveData = {
     "day42": {
         "title": "Day 42",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/anthem-part-3/1713631065",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/anthem-part-3/1713631065\"></iframe>",
         "PID": "635A379E615C1A1F",
         "metadata": {
@@ -548,6 +590,7 @@ const loveData = {
     "day43": {
         "title": "Day 43",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/dance-with-me/1713631404",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/dance-with-me/1713631404\"></iframe>",
         "PID": "FC231AA7A4E7FD96",
         "metadata": {
@@ -561,6 +604,7 @@ const loveData = {
     "day44": {
         "title": "Day 44",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/fell-in-love/1713631466",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/fell-in-love/1713631466\"></iframe>",
         "PID": "CE5A938CFF16CCCE",
         "metadata": {
@@ -574,6 +618,7 @@ const loveData = {
     "day45": {
         "title": "Day 45",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/one-more-time/1707258049",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/one-more-time/1707258049\"></iframe>",
         "PID": "D9DC92E537B0706B",
         "metadata": {
@@ -587,6 +632,7 @@ const loveData = {
     "day46": {
         "title": "Day 46",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/anthem-pt-2/1443271626",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/anthem-pt-2/1443271626\"></iframe>",
         "PID": "9798089BF41AF647",
         "metadata": {
@@ -600,6 +646,7 @@ const loveData = {
     "day47": {
         "title": "Day 47",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/i-miss-you/1440846785",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/i-miss-you/1440846785\"></iframe>",
         "PID": "A2B634043981CCE4",
         "metadata": {
@@ -613,6 +660,7 @@ const loveData = {
     "day48": {
         "title": "Day 48",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/id-do-anything/1355149512",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/id-do-anything/1355149512\"></iframe>",
         "PID": "1E7FE945B05B14BB",
         "metadata": {
@@ -626,6 +674,7 @@ const loveData = {
     "day49": {
         "title": "Day 49",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/like-its-her-birthday/716240568",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/like-its-her-birthday/716240568\"></iframe>",
         "PID": "3D0F77C6AF1A6913",
         "metadata": {
@@ -639,6 +688,7 @@ const loveData = {
     "day50": {
         "title": "Day 50",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/the-adventure/1440779687",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/the-adventure/1440779687\"></iframe>",
         "PID": "DD89156B980AB6FB",
         "metadata": {
@@ -652,6 +702,7 @@ const loveData = {
     "day51": {
         "title": "Day 51",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/last-night/716240629",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/last-night/716240629\"></iframe>",
         "PID": "04630ADA2E5071BE",
         "metadata": {
@@ -665,6 +716,7 @@ const loveData = {
     "day52": {
         "title": "Day 52",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/the-great-escape/276649797",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/the-great-escape/276649797\"></iframe>",
         "PID": "F26581473009D752",
         "metadata": {
@@ -678,6 +730,7 @@ const loveData = {
     "day53": {
         "title": "Day 53",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/please-dont-go-home-yet/1638404488",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/please-dont-go-home-yet/1638404488\"></iframe>",
         "PID": "E0DF5D038FDC743F",
         "metadata": {
@@ -691,6 +744,7 @@ const loveData = {
     "day54": {
         "title": "Day 54",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/the-way-you-make-me-feel/551515751",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/the-way-you-make-me-feel/551515751\"></iframe>",
         "PID": "0EA4EC1303FE92AC",
         "metadata": {
@@ -704,6 +758,7 @@ const loveData = {
     "day55": {
         "title": "Day 55",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/you-spin-me-round-like-a-record/211418804",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/you-spin-me-round-like-a-record/211418804\"></iframe>",
         "PID": "BF07B24EBF74A4C2",
         "metadata": {
@@ -717,6 +772,7 @@ const loveData = {
     "day56": {
         "title": "Day 56",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/she-takes-me-high/1297080809",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/she-takes-me-high/1297080809\"></iframe>",
         "PID": "F00FA87C3C1E7DD1",
         "metadata": {
@@ -730,6 +786,7 @@ const loveData = {
     "day57": {
         "title": "Day 57",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/the-anthem/288051950",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/the-anthem/288051950\"></iframe>",
         "PID": "5E2BCC8E6BA42085",
         "metadata": {
@@ -743,6 +800,7 @@ const loveData = {
     "day58": {
         "title": "Day 58",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/always/1440846959",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/always/1440846959\"></iframe>",
         "PID": "F3BA27BE00419B0E",
         "metadata": {
@@ -756,6 +814,7 @@ const loveData = {
     "day59": {
         "title": "Day 59",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/first-date/1440844995",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/first-date/1440844995\"></iframe>",
         "PID": "51E283AA218299F3",
         "metadata": {
@@ -769,6 +828,7 @@ const loveData = {
     "day60": {
         "title": "Day 60",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/ocean-avenue/725822641",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/ocean-avenue/725822641\"></iframe>",
         "PID": "3435701F729BD301",
         "metadata": {
@@ -782,6 +842,7 @@ const loveData = {
     "day61": {
         "title": "Day 61",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/with-me/1440766708",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/with-me/1440766708\"></iframe>",
         "PID": "826194943ED5B1BC",
         "metadata": {
@@ -795,6 +856,7 @@ const loveData = {
     "day62": {
         "title": "Day 62",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/real-love/1805942059",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/real-love/1805942059\"></iframe>",
         "PID": "8A9363B75A13D7F4",
         "metadata": {
@@ -808,6 +870,7 @@ const loveData = {
     "day63": {
         "title": "Day 63",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/getting-to-know-you/1854046948",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/getting-to-know-you/1854046948\"></iframe>",
         "PID": "B759E947A8FA362C",
         "metadata": {
@@ -821,6 +884,7 @@ const loveData = {
     "day64": {
         "title": "Day 64",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/lover/1468058173",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/lover/1468058173\"></iframe>",
         "PID": "6D6491DC748847B7",
         "metadata": {
@@ -834,6 +898,7 @@ const loveData = {
     "day65": {
         "title": "Day 65",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/paper-rings/1468058181",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/paper-rings/1468058181\"></iframe>",
         "PID": "510A745696154B96",
         "metadata": {
@@ -847,6 +912,7 @@ const loveData = {
     "day66": {
         "title": "Day 66",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/you-are-in-love-taylors-version/1708309198",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/you-are-in-love-taylors-version/1708309198\"></iframe>",
         "PID": "DD4D9C39D8ACBF7A",
         "metadata": {
@@ -860,6 +926,7 @@ const loveData = {
     "day67": {
         "title": "Day 67",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/wildest-dreams-taylors-version/1708309186",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/wildest-dreams-taylors-version/1708309186\"></iframe>",
         "PID": "347EAA42FB33566F",
         "metadata": {
@@ -873,6 +940,7 @@ const loveData = {
     "day68": {
         "title": "Day 68",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/dreams/202272624",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/dreams/202272624\"></iframe>",
         "PID": "5F2A004D880825B5",
         "metadata": {
@@ -886,6 +954,7 @@ const loveData = {
     "day69": {
         "title": "Day 69",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/everywhere/202272247",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/everywhere/202272247\"></iframe>",
         "PID": "1187586EEE8C6ED3",
         "metadata": {
@@ -899,6 +968,7 @@ const loveData = {
     "day70": {
         "title": "Day 70",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/josie/1440844835",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/josie/1440844835\"></iframe>",
         "PID": "DE94736690D756C4",
         "metadata": {
@@ -912,6 +982,7 @@ const loveData = {
     "day71": {
         "title": "Day 71",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/weightless/488243624",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/weightless/488243624\"></iframe>",
         "PID": "5BB9FDFE1A2BB1EA",
         "metadata": {
@@ -925,6 +996,7 @@ const loveData = {
     "day72": {
         "title": "Day 72",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/invisible-string/1524793912",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/invisible-string/1524793912\"></iframe>",
         "PID": "AD74B57AE70DCCED",
         "metadata": {
@@ -938,6 +1010,7 @@ const loveData = {
     "day73": {
         "title": "Day 73",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/willow/1544276228",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/willow/1544276228\"></iframe>",
         "PID": "ADB3E4E65D3823DC",
         "metadata": {
@@ -951,6 +1024,7 @@ const loveData = {
     "day74": {
         "title": "Day 74",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/late-night-talking/1615585006",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/late-night-talking/1615585006\"></iframe>",
         "PID": "4569566B07EADCC1",
         "metadata": {
@@ -964,6 +1038,7 @@ const loveData = {
     "day75": {
         "title": "Day 75",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/as-it-was/1615585008",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/as-it-was/1615585008\"></iframe>",
         "PID": "188E20B3B2D59FC1",
         "metadata": {
@@ -977,6 +1052,7 @@ const loveData = {
     "day76": {
         "title": "Day 76",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/matilda/1615585012",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/matilda/1615585012\"></iframe>",
         "PID": "890160696A649A6A",
         "metadata": {
@@ -990,6 +1066,7 @@ const loveData = {
     "day77": {
         "title": "Day 77",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/cinema/1615585091",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/cinema/1615585091\"></iframe>",
         "PID": "C4821D16C332638C",
         "metadata": {
@@ -1003,6 +1080,7 @@ const loveData = {
     "day78": {
         "title": "Day 78",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/love-of-my-life/1615585102",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/love-of-my-life/1615585102\"></iframe>",
         "PID": "2C075D40D2154BED",
         "metadata": {
@@ -1016,6 +1094,7 @@ const loveData = {
     "day79": {
         "title": "Day 79",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/daydreaming/1615585098",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/daydreaming/1615585098\"></iframe>",
         "PID": "F72A509D846446C6",
         "metadata": {
@@ -1029,6 +1108,7 @@ const loveData = {
     "day80": {
         "title": "Day 80",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/live-while-were-young/574406657",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/live-while-were-young/574406657\"></iframe>",
         "PID": "A538CD5FD3606EB2",
         "metadata": {
@@ -1042,6 +1122,7 @@ const loveData = {
     "day81": {
         "title": "Day 81",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/kiss-you/574406658",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/kiss-you/574406658\"></iframe>",
         "PID": "E7CED58746D633B3",
         "metadata": {
@@ -1055,6 +1136,7 @@ const loveData = {
     "day82": {
         "title": "Day 82",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/little-things/574406659",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/little-things/574406659\"></iframe>",
         "PID": "480BAD8294EC2E19",
         "metadata": {
@@ -1068,6 +1150,7 @@ const loveData = {
     "day83": {
         "title": "Day 83",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/summer-love/572141842",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/summer-love/572141842\"></iframe>",
         "PID": "FE58241B81DF284D",
         "metadata": {
@@ -1081,6 +1164,7 @@ const loveData = {
     "day84": {
         "title": "Day 84",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/chapter-13/1440754417",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/chapter-13/1440754417\"></iframe>",
         "PID": "DB6B27472E5521D8",
         "metadata": {
@@ -1094,6 +1178,7 @@ const loveData = {
     "day85": {
         "title": "Day 85",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/i-feel-it-coming-feat-daft-punk/1677006159",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/i-feel-it-coming-feat-daft-punk/1677006159\"></iframe>",
         "PID": "FAEE558A34FC27C3",
         "metadata": {
@@ -1107,6 +1192,7 @@ const loveData = {
     "day86": {
         "title": "Day 86",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/heaven-can-wait/1297080811",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/heaven-can-wait/1297080811\"></iframe>",
         "PID": "9BE2A619859B9EFE",
         "metadata": {
@@ -1120,6 +1206,7 @@ const loveData = {
     "day87": {
         "title": "Day 87",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/sucker/1461478389",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/sucker/1461478389\"></iframe>",
         "PID": "307BA427A7C96B1F",
         "metadata": {
@@ -1133,6 +1220,7 @@ const loveData = {
     "day88": {
         "title": "Day 88",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/only-human/1461478402",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/only-human/1461478402\"></iframe>",
         "PID": "DAAF8F763FC21500",
         "metadata": {
@@ -1146,6 +1234,7 @@ const loveData = {
     "day89": {
         "title": "Day 89",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/tennessee-whiskey/1440827492",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/tennessee-whiskey/1440827492\"></iframe>",
         "PID": "4BABFC788C42C1DD",
         "metadata": {
@@ -1159,6 +1248,7 @@ const loveData = {
     "day90": {
         "title": "Day 90",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/slow-hands/1440918017",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/slow-hands/1440918017\"></iframe>",
         "PID": "FA8EEE65D170685C",
         "metadata": {
@@ -1172,6 +1262,7 @@ const loveData = {
     "day91": {
         "title": "Day 91",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/yellow/1122782283",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/yellow/1122782283\"></iframe>",
         "PID": "7CC45962E7659691",
         "metadata": {
@@ -1185,6 +1276,7 @@ const loveData = {
     "day92": {
         "title": "Day 92",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/something/1441164582",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/something/1441164582\"></iframe>",
         "PID": "E326BA4210E2E7FF",
         "metadata": {
@@ -1198,6 +1290,7 @@ const loveData = {
     "day93": {
         "title": "Day 93",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/sweet-child-o-mine/1377826892",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/sweet-child-o-mine/1377826892\"></iframe>",
         "PID": "8E315322687F3D37",
         "metadata": {
@@ -1211,6 +1304,7 @@ const loveData = {
     "day94": {
         "title": "Day 94",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/always-on-my-mind/170923206",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/always-on-my-mind/170923206\"></iframe>",
         "PID": "D04EE5E693B5AAB0",
         "metadata": {
@@ -1224,6 +1318,7 @@ const loveData = {
     "day95": {
         "title": "Day 95",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/i-will-always-love-you/388151901",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/i-will-always-love-you/388151901\"></iframe>",
         "PID": "CE0244D9C461AD59",
         "metadata": {
@@ -1237,6 +1332,7 @@ const loveData = {
     "day96": {
         "title": "Day 96",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/my-girl/1469579653",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/my-girl/1469579653\"></iframe>",
         "PID": "FAD5F6881E1B06E8",
         "metadata": {
@@ -1250,6 +1346,7 @@ const loveData = {
     "day97": {
         "title": "Day 97",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/head-over-boots/1440847742",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/head-over-boots/1440847742\"></iframe>",
         "PID": "B1FF6DC963D15AB8",
         "metadata": {
@@ -1263,6 +1360,7 @@ const loveData = {
     "day98": {
         "title": "Day 98",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/worst-way/1736951792",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/worst-way/1736951792\"></iframe>",
         "PID": "B3A742995345D3A3",
         "metadata": {
@@ -1276,6 +1374,7 @@ const loveData = {
     "day99": {
         "title": "Day 99",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/4x4xu/1744255566",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/4x4xu/1744255566\"></iframe>",
         "PID": "72072F69CAB5785E",
         "metadata": {
@@ -1289,6 +1388,7 @@ const loveData = {
     "day100": {
         "title": "Day 100",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/what-my-world-spins-around/1663956816",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/what-my-world-spins-around/1663956816\"></iframe>",
         "PID": "B343F4BC1A7B7E11",
         "metadata": {
@@ -1302,6 +1402,7 @@ const loveData = {
     "day101": {
         "title": "Day 101",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/the-kind-of-love-we-make/1619408877",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/the-kind-of-love-we-make/1619408877\"></iframe>",
         "PID": "F13584E6556A12F3",
         "metadata": {
@@ -1315,6 +1416,7 @@ const loveData = {
     "day102": {
         "title": "Day 102",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/im-gonna-love-you/1769025576",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/im-gonna-love-you/1769025576\"></iframe>",
         "PID": "7E8874004380ACF6",
         "metadata": {
@@ -1328,6 +1430,7 @@ const loveData = {
     "day103": {
         "title": "Day 103",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/starting-over/1528423148",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/starting-over/1528423148\"></iframe>",
         "PID": "172B3A040941BAF4",
         "metadata": {
@@ -1341,6 +1444,7 @@ const loveData = {
     "day104": {
         "title": "Day 104",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/god-again/1860956806",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/god-again/1860956806\"></iframe>",
         "PID": "9A874F357D6A8CFF",
         "metadata": {
@@ -1354,6 +1458,7 @@ const loveData = {
     "day105": {
         "title": "Day 105",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/stampede/1840187008",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/stampede/1840187008\"></iframe>",
         "PID": "C53EEB57B42A51F6",
         "metadata": {
@@ -1367,6 +1472,7 @@ const loveData = {
     "day106": {
         "title": "Day 106",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/with-a-woman-you-love/1586748927",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/with-a-woman-you-love/1586748927\"></iframe>",
         "PID": "6B46D27579957EBC",
         "metadata": {
@@ -1380,6 +1486,7 @@ const loveData = {
     "day107": {
         "title": "Day 107",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/what-ifs-feat-lauren-alaina/1277175598",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/what-ifs-feat-lauren-alaina/1277175598\"></iframe>",
         "PID": "DD6CDB7616067306",
         "metadata": {
@@ -1393,6 +1500,7 @@ const loveData = {
     "day108": {
         "title": "Day 108",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/nobody-but-you-feat-gwen-stefani/1489235177",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/nobody-but-you-feat-gwen-stefani/1489235177\"></iframe>",
         "PID": "E0EEEFFBA89A1F43",
         "metadata": {
@@ -1406,6 +1514,7 @@ const loveData = {
     "day109": {
         "title": "Day 109",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/you/444285047",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/you/444285047\"></iframe>",
         "PID": "6E693BE3233329D2",
         "metadata": {
@@ -1419,6 +1528,7 @@ const loveData = {
     "day110": {
         "title": "Day 110",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/when-i-aint-lookin/1767856838",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/when-i-aint-lookin/1767856838\"></iframe>",
         "PID": "DF52340C79F045A0",
         "metadata": {
@@ -1432,6 +1542,7 @@ const loveData = {
     "day111": {
         "title": "Day 111",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/my-best-friend/68874818",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/my-best-friend/68874818\"></iframe>",
         "PID": "919350707B438547",
         "metadata": {
@@ -1445,6 +1556,7 @@ const loveData = {
     "day112": {
         "title": "Day 112",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/chasin-you/1752598329",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/chasin-you/1752598329\"></iframe>",
         "PID": "A8214733ABF257C8",
         "metadata": {
@@ -1458,6 +1570,7 @@ const loveData = {
     "day113": {
         "title": "Day 113",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/look-what-god-gave-her/1454614696",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/look-what-god-gave-her/1454614696\"></iframe>",
         "PID": "05336F024537855C",
         "metadata": {
@@ -1471,6 +1584,7 @@ const loveData = {
     "day114": {
         "title": "Day 114",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/die-a-happy-man/1440923041",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/die-a-happy-man/1440923041\"></iframe>",
         "PID": "F01F75239C15FF3E",
         "metadata": {
@@ -1484,6 +1598,7 @@ const loveData = {
     "day115": {
         "title": "Day 115",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/whatever-it-is/1585172566",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/whatever-it-is/1585172566\"></iframe>",
         "PID": "5B3DA1B65AEE91A7",
         "metadata": {
@@ -1497,6 +1612,7 @@ const loveData = {
     "day116": {
         "title": "Day 116",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/on-my-way-to-you/1439113154",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/on-my-way-to-you/1439113154\"></iframe>",
         "PID": "049248AD9EE682ED",
         "metadata": {
@@ -1510,6 +1626,7 @@ const loveData = {
     "day117": {
         "title": "Day 117",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/barefoot-and-pregnant/1852324522",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/barefoot-and-pregnant/1852324522\"></iframe>",
         "PID": "6003CB31251A5CA0",
         "metadata": {
@@ -1523,6 +1640,7 @@ const loveData = {
     "day118": {
         "title": "Day 118",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/you-look-like-you-love-me/1749121123",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/you-look-like-you-love-me/1749121123\"></iframe>",
         "PID": "527A08F02D79CA73",
         "metadata": {
@@ -1536,6 +1654,7 @@ const loveData = {
     "day119": {
         "title": "Day 119",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/love-you-anyway/1666738582",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/love-you-anyway/1666738582\"></iframe>",
         "PID": "C25D967C314537A4",
         "metadata": {
@@ -1549,6 +1668,7 @@ const loveData = {
     "day120": {
         "title": "Day 120",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/eyes-on-you/1451355663",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/eyes-on-you/1451355663\"></iframe>",
         "PID": "D826058D9D71D1EC",
         "metadata": {
@@ -1562,6 +1682,7 @@ const loveData = {
     "day121": {
         "title": "Day 121",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/mine-taylors-version/1690840106",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/mine-taylors-version/1690840106\"></iframe>",
         "PID": "5D8088A4E17A38D7",
         "metadata": {
@@ -1575,6 +1696,7 @@ const loveData = {
     "day122": {
         "title": "Day 122",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/better-together/1527782441",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/better-together/1527782441\"></iframe>",
         "PID": "0359AF4749026FA3",
         "metadata": {
@@ -1588,6 +1710,7 @@ const loveData = {
     "day123": {
         "title": "Day 123",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/i-like-it-i-love-it/260042093",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/i-like-it-i-love-it/260042093\"></iframe>",
         "PID": "DA0615D6FFE3DB0B",
         "metadata": {
@@ -1601,6 +1724,7 @@ const loveData = {
     "day124": {
         "title": "Day 124",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/big-big-plans/1752595944",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/big-big-plans/1752595944\"></iframe>",
         "PID": "C395EEC668BDE568",
         "metadata": {
@@ -1614,6 +1738,7 @@ const loveData = {
     "day125": {
         "title": "Day 125",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/lose-control/1691699836",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/lose-control/1691699836\"></iframe>",
         "PID": "156495D2CE8E0D00",
         "metadata": {
@@ -1627,6 +1752,7 @@ const loveData = {
     "day126": {
         "title": "Day 126",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/just-the-way-you-are/576655095",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/just-the-way-you-are/576655095\"></iframe>",
         "PID": "D36E63465937E456",
         "metadata": {
@@ -1640,6 +1766,7 @@ const loveData = {
     "day127": {
         "title": "Day 127",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/afterglow/1545341251",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/afterglow/1545341251\"></iframe>",
         "PID": "1C6124A4B1B5F8C8",
         "metadata": {
@@ -1653,6 +1780,7 @@ const loveData = {
     "day128": {
         "title": "Day 128",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/this-is-heaven/1554879280",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/this-is-heaven/1554879280\"></iframe>",
         "PID": "310121467E299C4C",
         "metadata": {
@@ -1666,6 +1794,7 @@ const loveData = {
     "day129": {
         "title": "Day 129",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/sweet-love/1859546945",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/sweet-love/1859546945\"></iframe>",
         "PID": "1B47D63F0C9D6FBE",
         "metadata": {
@@ -1679,6 +1808,7 @@ const loveData = {
     "day130": {
         "title": "Day 130",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/play-it-again/1440814324",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/play-it-again/1440814324\"></iframe>",
         "PID": "350A534ACBB12F6E",
         "metadata": {
@@ -1692,6 +1822,7 @@ const loveData = {
     "day131": {
         "title": "Day 131",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/sk8er-boi/315025826",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/sk8er-boi/315025826\"></iframe>",
         "PID": "A58239D5809ED03E",
         "metadata": {
@@ -1705,6 +1836,7 @@ const loveData = {
     "day132": {
         "title": "Day 132",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/everywhere/330897172",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/everywhere/330897172\"></iframe>",
         "PID": "3772956B72365581",
         "metadata": {
@@ -1718,6 +1850,7 @@ const loveData = {
     "day133": {
         "title": "Day 133",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/africa/1450271000",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/africa/1450271000\"></iframe>",
         "PID": "D537E84EC57337F4",
         "metadata": {
@@ -1731,6 +1864,7 @@ const loveData = {
     "day134": {
         "title": "Day 134",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/breathe/1440781989",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/breathe/1440781989\"></iframe>",
         "PID": "FB7F856AB40DD26D",
         "metadata": {
@@ -1744,6 +1878,7 @@ const loveData = {
     "day135": {
         "title": "Day 135",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/unchained-melody/1440782462",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/unchained-melody/1440782462\"></iframe>",
         "PID": "57372AEB49827699",
         "metadata": {
@@ -1757,6 +1892,7 @@ const loveData = {
     "day136": {
         "title": "Day 136",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/take-my-breath-away-love-theme-from-top-gun/387194076",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/take-my-breath-away-love-theme-from-top-gun/387194076\"></iframe>",
         "PID": "6C905A381569CCEC",
         "metadata": {
@@ -1770,6 +1906,7 @@ const loveData = {
     "day137": {
         "title": "Day 137",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/aint-no-mountain-high-enough/1443134344",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/aint-no-mountain-high-enough/1443134344\"></iframe>",
         "PID": "2617DBFAAF783183",
         "metadata": {
@@ -1783,6 +1920,7 @@ const loveData = {
     "day138": {
         "title": "Day 138",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/forever-and-ever-amen/307031224",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/forever-and-ever-amen/307031224\"></iframe>",
         "PID": "2ECC59F30F30DAC0",
         "metadata": {
@@ -1796,6 +1934,7 @@ const loveData = {
     "day139": {
         "title": "Day 139",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/history/1040171627",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/history/1040171627\"></iframe>",
         "PID": "999FE1E60001994A",
         "metadata": {
@@ -1809,6 +1948,7 @@ const loveData = {
     "day140": {
         "title": "Day 140",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/castle-on-the-hill/1193701328",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/castle-on-the-hill/1193701328\"></iframe>",
         "PID": "CDF548BBC193CBF8",
         "metadata": {
@@ -1822,6 +1962,7 @@ const loveData = {
     "day141": {
         "title": "Day 141",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/kiss-me/1163449957",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/kiss-me/1163449957\"></iframe>",
         "PID": "E36633911BC6F3A0",
         "metadata": {
@@ -1835,6 +1976,7 @@ const loveData = {
     "day142": {
         "title": "Day 142",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/crazy-little-thing-called-love/1440650739",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/crazy-little-thing-called-love/1440650739\"></iframe>",
         "PID": "CC196A3EB45BEC36",
         "metadata": {
@@ -1848,6 +1990,7 @@ const loveData = {
     "day143": {
         "title": "Day 143",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/time-after-time/400603695",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/time-after-time/400603695\"></iframe>",
         "PID": "F7B890027957C3AD",
         "metadata": {
@@ -1861,6 +2004,7 @@ const loveData = {
     "day144": {
         "title": "Day 144",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/intentions-feat-quavo/1496639586",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/intentions-feat-quavo/1496639586\"></iframe>",
         "PID": "69AAAD252D517A5A",
         "metadata": {
@@ -1874,6 +2018,7 @@ const loveData = {
     "day145": {
         "title": "Day 145",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/soda-pop/1820264147",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/soda-pop/1820264147\"></iframe>",
         "PID": "1B5EDD9B1A9D0C54",
         "metadata": {
@@ -1887,6 +2032,7 @@ const loveData = {
     "day146": {
         "title": "Day 146",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/oh-pretty-woman/388155861",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/oh-pretty-woman/388155861\"></iframe>",
         "PID": "5D1BABF6C47F0E3F",
         "metadata": {
@@ -1900,6 +2046,7 @@ const loveData = {
     "day147": {
         "title": "Day 147",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/girls-boys/1440912350",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/girls-boys/1440912350\"></iframe>",
         "PID": "5C4EE070EAC6A140",
         "metadata": {
@@ -1913,6 +2060,7 @@ const loveData = {
     "day148": {
         "title": "Day 148",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/sad-song-feat-elena-coats/1437562756",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/sad-song-feat-elena-coats/1437562756\"></iframe>",
         "PID": "21A834DAA2BDE210",
         "metadata": {
@@ -1926,6 +2074,7 @@ const loveData = {
     "day149": {
         "title": "Day 149",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/skyway-avenue/1297082404",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/skyway-avenue/1297082404\"></iframe>",
         "PID": "B446E9B25AEAF0F0",
         "metadata": {
@@ -1939,6 +2088,7 @@ const loveData = {
     "day150": {
         "title": "Day 150",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/say-you-like-me/1716024937",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/say-you-like-me/1716024937\"></iframe>",
         "PID": "BBB8B9E783720F80",
         "metadata": {
@@ -1952,6 +2102,7 @@ const loveData = {
     "day151": {
         "title": "Day 151",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/secret-valentine/1297082402",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/secret-valentine/1297082402\"></iframe>",
         "PID": "B1C5F766C4AE0C90",
         "metadata": {
@@ -1965,6 +2116,7 @@ const loveData = {
     "day152": {
         "title": "Day 152",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/well-be-a-dream-feat-demi-lovato/1437296917",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/well-be-a-dream-feat-demi-lovato/1437296917\"></iframe>",
         "PID": "B4B3514FF2845008",
         "metadata": {
@@ -1978,6 +2130,7 @@ const loveData = {
     "day153": {
         "title": "Day 153",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/stay-young/1297082407",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/stay-young/1297082407\"></iframe>",
         "PID": "962037742DEF986D",
         "metadata": {
@@ -1991,7 +2144,8 @@ const loveData = {
     "day154": {
         "title": "Day 154",
         "message": "",
-        "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/friday-is-forever/1462446990\"></iframe>",
+        "src": "https://embed.music.apple.com/us/song/friday-is-forever/1716024931",
+        "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/friday-is-forever/1716024931\"></iframe>",
         "PID": "AB2A0A417E51310A",
         "metadata": {
             "original_name": "Friday Is Forever",
@@ -2004,6 +2158,7 @@ const loveData = {
     "day155": {
         "title": "Day 155",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/i-like-it/1437554567",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/i-like-it/1437554567\"></iframe>",
         "PID": "4D7BCB9CEA6D47D0",
         "metadata": {
@@ -2017,6 +2172,7 @@ const loveData = {
     "day156": {
         "title": "Day 156",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/shape-of-you/1193701392",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/shape-of-you/1193701392\"></iframe>",
         "PID": "EA09E95239A2D745",
         "metadata": {
@@ -2030,6 +2186,7 @@ const loveData = {
     "day157": {
         "title": "Day 157",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/our-song/1440914010",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/our-song/1440914010\"></iframe>",
         "PID": "2CCE40E66EA30155",
         "metadata": {
@@ -2043,6 +2200,7 @@ const loveData = {
     "day158": {
         "title": "Day 158",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/if-i-cant-have-you/1474313954",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/if-i-cant-have-you/1474313954\"></iframe>",
         "PID": "FA549CA3087D9EED",
         "metadata": {
@@ -2056,6 +2214,7 @@ const loveData = {
     "day159": {
         "title": "Day 159",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/you-i/1796238718",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/you-i/1796238718\"></iframe>",
         "PID": "469D2C17ADC75502",
         "metadata": {
@@ -2069,6 +2228,7 @@ const loveData = {
     "day160": {
         "title": "Day 160",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/drugs-candy/1565280123",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/drugs-candy/1565280123\"></iframe>",
         "PID": "B93FBBB27ABDA878",
         "metadata": {
@@ -2082,6 +2242,7 @@ const loveData = {
     "day161": {
         "title": "Day 161",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/nothing/1476047741",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/nothing/1476047741\"></iframe>",
         "PID": "1A3BA29569C0FBE4",
         "metadata": {
@@ -2095,6 +2256,7 @@ const loveData = {
     "day162": {
         "title": "Day 162",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/the-most-beautiful-thing/1500454356",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/the-most-beautiful-thing/1500454356\"></iframe>",
         "PID": "15873A88FD27575B",
         "metadata": {
@@ -2108,6 +2270,7 @@ const loveData = {
     "day163": {
         "title": "Day 163",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/drag-me-down/1040195238",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/drag-me-down/1040195238\"></iframe>",
         "PID": "953D6F87BDBD1F64",
         "metadata": {
@@ -2121,6 +2284,7 @@ const loveData = {
     "day164": {
         "title": "Day 164",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/clocks/1122776156",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/clocks/1122776156\"></iframe>",
         "PID": "4ABD9770D0889743",
         "metadata": {
@@ -2134,6 +2298,7 @@ const loveData = {
     "day165": {
         "title": "Day 165",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/you-and-me/1590290094",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/you-and-me/1590290094\"></iframe>",
         "PID": "CE5A23D77A0DC803",
         "metadata": {
@@ -2147,6 +2312,7 @@ const loveData = {
     "day166": {
         "title": "Day 166",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/faithfully-2024-remaster/169003626",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/faithfully-2024-remaster/169003626\"></iframe>",
         "PID": "9FE1E16A24F018A1",
         "metadata": {
@@ -2160,6 +2326,7 @@ const loveData = {
     "day167": {
         "title": "Day 167",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/forever-to-go/1567864843",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/forever-to-go/1567864843\"></iframe>",
         "PID": "46F4D128AEB4EBF3",
         "metadata": {
@@ -2173,6 +2340,7 @@ const loveData = {
     "day168": {
         "title": "Day 168",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/bundle-of-joy/1443178621",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/bundle-of-joy/1443178621\"></iframe>",
         "PID": "AFF68E7CC2D6A991",
         "metadata": {
@@ -2186,6 +2354,7 @@ const loveData = {
     "day169": {
         "title": "Day 169",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/remember-you-young/1454614791",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/remember-you-young/1454614791\"></iframe>",
         "PID": "14C36592B2193449",
         "metadata": {
@@ -2199,6 +2368,7 @@ const loveData = {
     "day170": {
         "title": "Day 170",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/from-the-ground-up/1107743951",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/from-the-ground-up/1107743951\"></iframe>",
         "PID": "EF77D03875C7243C",
         "metadata": {
@@ -2212,6 +2382,7 @@ const loveData = {
     "day171": {
         "title": "Day 171",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/fly-me-to-the-moon-feat-count-basie-and-his-orchestra/1440858129",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/fly-me-to-the-moon-feat-count-basie-and-his-orchestra/1440858129\"></iframe>",
         "PID": "CB89F90BFDE56935",
         "metadata": {
@@ -2225,6 +2396,7 @@ const loveData = {
     "day172": {
         "title": "Day 172",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/watermelon-sugar/1485802967",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/watermelon-sugar/1485802967\"></iframe>",
         "PID": "5D22952730517A85",
         "metadata": {
@@ -2238,6 +2410,7 @@ const loveData = {
     "day173": {
         "title": "Day 173",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/holiday/276649814",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/holiday/276649814\"></iframe>",
         "PID": "6F70B206B54A05B4",
         "metadata": {
@@ -2251,6 +2424,7 @@ const loveData = {
     "day174": {
         "title": "Day 174",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/summer-of-69-classic-version/1870995775",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/summer-of-69-classic-version/1870995775\"></iframe>",
         "PID": "115130BC4C5CD80A",
         "metadata": {
@@ -2264,6 +2438,7 @@ const loveData = {
     "day175": {
         "title": "Day 175",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/never-gonna-give-you-up/1559885421",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/never-gonna-give-you-up/1559885421\"></iframe>",
         "PID": "D4B5F67EF0646472",
         "metadata": {
@@ -2277,6 +2452,7 @@ const loveData = {
     "day176": {
         "title": "Day 176",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/careless-whisper/193085066",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/careless-whisper/193085066\"></iframe>",
         "PID": "D36CD805CB3D6FB3",
         "metadata": {
@@ -2290,6 +2466,7 @@ const loveData = {
     "day177": {
         "title": "Day 177",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/sign-of-the-times/1226034393",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/sign-of-the-times/1226034393\"></iframe>",
         "PID": "1FE6AB454367F337",
         "metadata": {
@@ -2303,6 +2480,7 @@ const loveData = {
     "day178": {
         "title": "Day 178",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/betty/1541906503",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/betty/1541906503\"></iframe>",
         "PID": "0FEEE98838E3DFA2",
         "metadata": {
@@ -2316,6 +2494,7 @@ const loveData = {
     "day179": {
         "title": "Day 179",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/cruel-summer/1468058171",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/cruel-summer/1468058171\"></iframe>",
         "PID": "BCB41B6D6B00ACAD",
         "metadata": {
@@ -2329,6 +2508,7 @@ const loveData = {
     "day180": {
         "title": "Day 180",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/perfect/1040171617",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/perfect/1040171617\"></iframe>",
         "PID": "18BD893F48DF62E6",
         "metadata": {
@@ -2342,6 +2522,7 @@ const loveData = {
     "day181": {
         "title": "Day 181",
         "message": "",
+        "src": "https://embed.music.apple.com/us/song/18/1524680722",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/18/1524680722\"></iframe>",
         "PID": "43EBD64BD79AAA9D",
         "metadata": {

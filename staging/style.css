@@ -688,7 +688,6 @@ body {
   backdrop-filter: blur(15px) saturate(180%);
   -webkit-backdrop-filter: blur(15px) saturate(180%);
   
-  border: 1px solid var(--glass-edge);
   border-radius: 2rem;
   padding: 1.5rem;
   box-shadow: 0 8px 32px var(--card-shadow), 
@@ -698,21 +697,18 @@ body {
   z-index: 2000;
 }
 
+/* THE SHINE & BEZEL (The physical glass feel) */
 .glass::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--glass-reflection);
-  border-radius: 2rem;
-  backdrop-filter: blur(1px);
-  box-shadow: inset -10px -8px 0px -11px var(--glass-shine),
-              inset 0px -9px 0px -8px var(--glass-shine);
-  opacity: 0.6;
-  z-index: -1;
-  filter: blur(1px) brightness(115%);
+  inset: 0;
+  z-index: 2;
   pointer-events: none;
-  transition: box-shadow 0.5s ease;
+  border-radius: inherit;
+  
+  /* Creates the white highlight edge seen in your goal image */
+  border: 1px solid var(--glass-edge);
+  box-shadow: 
+      inset 2px 2px 4px rgba(255, 255, 255, 0.4),
+      inset -1px -1px 4px rgba(0, 0, 0, 0.1);
 }
