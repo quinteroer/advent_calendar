@@ -28,7 +28,7 @@
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>URL</key>
-            <string>https://quinteroer.github.io/threesixtyfive/</string>
+            <string>https://quinteroer.github.io/threesixtyfive/staging</string>
         </dict>
     </array>
     <key>PayloadDisplayName</key>

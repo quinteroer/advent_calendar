@@ -137,7 +137,7 @@ body {
     gap: 20px;
     width: 100%;
     /* Extra room below the title block */
-    margin-bottom: 30px; 
+    margin-bottom: 10px; 
 }
 
 .title-text {
@@ -439,6 +439,7 @@ body {
 
 .modal-card,
 .modal-content {
+    margin-top:-20px;
     background: var(--card-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
