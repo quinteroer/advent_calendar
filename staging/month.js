@@ -24,7 +24,7 @@ if (config) {
 
     const grid = document.getElementById('calendarGrid');
     const today = new Date();
-    const countdownStart = new Date(2026, 1, 14); // Feb 14, 2026
+    const countdownStart = new Date(2026, 1, 13); // Feb 14, 2026
     const openedDays = JSON.parse(localStorage.getItem('openedLoveDays') || '{}');
 
     for (let day = config.startDay; day <= config.endDay; day++) {
