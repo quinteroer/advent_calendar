@@ -1077,14 +1077,33 @@ function buildCommitMessage() {
     return `updated calendar_data.js with ${n} song${n !== 1 ? 's' : ''} different`;
 }
 
-function openGithubModal() {
+async function openGithubModal() {
     // Restore last-used values
     document.getElementById('ghToken').value  = ghSettings.token;
     document.getElementById('ghRepo').value   = ghSettings.repo;
     document.getElementById('ghBranch').value = ghSettings.branch;
     document.getElementById('ghPath').value   = ghSettings.path;
 
-    // Show the computed commit message preview
+    // Auto-load token from key.txt if we don't already have one
+    if (!ghSettings.token) {
+    try {
+        const resp = await fetch('key.json');
+        if (resp.ok) {
+            const cfg = await resp.json();
+            if (cfg.key) {
+                ghSettings.token = cfg.key;
+                document.getElementById('ghToken').value = cfg.key;
+            }
+            if (cfg.repo_path) {
+                ghSettings.repo = cfg.repo_path;
+                document.getElementById('ghRepo').value = cfg.repo_path;
+            }
+        }
+    } catch (e) {
+        // key.json not found or unreadable — user can enter manually
+    }
+}
+
     updateCommitMsgPreview();
 
     const logEl = document.getElementById('ghLog');
