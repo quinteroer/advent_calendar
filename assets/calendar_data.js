@@ -29,7 +29,7 @@ const loveData = {
   },
   "day3": {
     "title": "Day 3",
-    "message": "Happy Valentines, Belly. You're the love of my life and I am so full of happiness that I can be in your life. Being your boyfriend and your best friend is the highest privelidge.",
+    "message": "I can't help but think how enchanted you've made my life. I love you so much forever and ever.",
     "src": "https://embed.music.apple.com/us/song/enchanted-taylors-version/1690840535",
     "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/enchanted-taylors-version/1690840535\"></iframe>",
     "PID": "5669B1B05268E853",
