@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵 Calendar Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Unsaved changes banner -->
+    <div class="save-banner" id="saveBanner">
+        <span>⚠️ Unsaved changes</span>
+        <div class="save-banner-btns">
+            <button onclick="discardChanges()">Discard</button>
+            <button class="ps" onclick="saveFile()">💾 Save calendar_data.js</button>
+        </div>
+    </div>
+
+    <div id="page-wrapper">
+
+        <div class="editor-header">
+            <h1>🎵 Calendar Editor</h1>
+            <p>Arrange, Pin & Write</p>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar glass">
+            <div class="toolbar-info" id="toolbarInfo">Loading…</div>
+            <div class="search-wrap">
+                <span class="si">🔍</span>
+                <input type="text" id="searchInput" placeholder="Search songs…" oninput="filterCards()">
+            </div>
+            <button class="btn btn-fetch" onclick="openFetchModal()">🔄 Fetch Songs</button>
+            <button class="btn btn-meta" onclick="openMetaModal()">🎵 Fill Metadata</button>
+            <button class="btn" onclick="randomizeUnpinned()">🔀 Randomize Unpinned</button>
+            <button class="btn btn-danger" onclick="clearAllPins()">📍 Clear Pins</button>
+            <button class="btn" onclick="openPreviewToday()">👁 Preview Today</button>
+            <button class="btn" id="linkFileBtn" onclick="linkFile()" title="Link calendar_data.js so saves overwrite it directly">🔗 Link File</button>
+            <button class="btn btn-save" onclick="saveFile()">💾 Save File</button>
+            <button class="btn btn-github" onclick="openGithubModal()">🐙 Commit to GitHub</button>
+        </div>
+
+        <!-- Stats bar -->
+        <div class="stats-bar">
+            <div>Days: <span id="sDays">–</span></div>
+            <div>Pinned: <span id="sPinned">–</span></div>
+            <div>Messages: <span id="sMsg">–</span></div>
+            <div>Unpinned: <span id="sUnpinned">–</span></div>
+        </div>
+
+        <!-- Song cards -->
+        <div class="calendar-grid" id="calendarGrid"></div>
+
+    </div>
+
+    <!-- Preview modal -->
+    <div class="modal-overlay" id="previewModal">
+        <div class="modal-box">
+            <h2 id="prvDay"></h2>
+            <p class="modal-date" id="prvDate"></p>
+            <div id="prvPlayer"></div>
+            <div class="modal-msg-preview" id="prvMsg" style="display:none"></div>
+            <button class="modal-close" onclick="closePreview()">Close</button>
+        </div>
+    </div>
+
+    <!-- Fetch songs modal -->
+    <div class="modal-overlay" id="fetchModal">
+        <div class="modal-box" style="max-width:600px">
+            <h2>🔄 Fetch Songs from Library</h2>
+            <p class="fetch-subtext">
+                Select your <code>365_library.xml</code> to compare PIDs and find new songs.
+            </p>
+            <button class="btn btn-fetch" onclick="pickXMLFile()" style="width:100%;justify-content:center;margin-bottom:8px;">
+                📂 Select 365_library.xml
+            </button>
+            <div class="fetch-filename" id="fetchFileName">No file selected</div>
+            <div class="progress-bar" id="fetchProgress" style="display:none">
+                <div class="progress-fill" id="fetchFill"></div>
+            </div>
+            <div class="fetch-log" id="fetchLog" style="display:none"></div>
+            <div class="fetch-modal-btns">
+                <button class="btn btn-fetch" id="fetchRunBtn" onclick="runFetch()" disabled>▶ Run Analysis</button>
+                <button class="btn btn-save"  id="fetchApplyBtn" onclick="applyFetchResults()" style="display:none">✅ Apply Changes</button>
+                <button class="btn btn-danger" onclick="closeFetchModal()">✕ Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fill Metadata modal -->
+    <div class="modal-overlay" id="metaModal">
+        <div class="modal-box" style="max-width:620px">
+            <h2>🎵 Fill Metadata</h2>
+            <p class="fetch-subtext">
+                Queries the iTunes Search API to find Apple Music IDs and build embed links
+                for every card that doesn't have one yet.<br>
+                Rate-limited to ~1 call per 3–6 seconds (same as <code>swap.py</code>).
+            </p>
+
+            <div id="metaQueueCount" style="font-size:0.8rem;font-weight:700;opacity:0.7;margin-bottom:14px;"></div>
+
+            <div class="progress-bar" id="metaProgressBar">
+                <div class="progress-fill" id="metaFill"></div>
+            </div>
+            <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;opacity:0.45;text-align:right;margin-top:3px;margin-bottom:10px;" id="metaProgressLabel"></div>
+
+            <div class="fetch-log" id="metaLog" style="display:none"></div>
+
+            <div class="fetch-modal-btns">
+                <button class="btn btn-meta" id="metaRunBtn" onclick="runMetaFill()">▶ Start</button>
+                <button class="btn btn-danger" id="metaAbortBtn" onclick="abortMeta()" style="display:none">⛔ Abort</button>
+                <button class="btn btn-danger" onclick="closeMetaModal()">✕ Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Github commit modal-->
+
+    <div class="modal-overlay" id="githubModal">
+    <div class="modal-box" style="max-width:560px">
+        <h2>🐙 Commit to GitHub</h2>
+        <p class="fetch-subtext">
+            Push <code>calendar_data.js</code> directly to your GitHub repo via the API.<br>
+            Your token is stored only in memory and never leaves your browser.
+        </p>
+
+        <div class="github-form">
+            <div class="github-field">
+                <label>GitHub Personal Access Token</label>
+                <input type="password" id="ghToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
+                       autocomplete="off" spellcheck="false">
+                <span class="field-hint">Needs <code>repo</code> scope · <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener">Create one ↗</a></span>
+            </div>
+            <div class="github-field">
+                <label>Repository <span style="opacity:0.5">(owner/repo)</span></label>
+                <input type="text" id="ghRepo" placeholder="username/my-365-calendar">
+            </div>
+            <div class="github-field">
+                <label>Branch</label>
+                <input type="text" id="ghBranch" placeholder="main" value="main">
+            </div>
+            <div class="github-field">
+                <label>File path in repo</label>
+                <input type="text" id="ghPath" placeholder="assets/calendar_data.js" value="assets/calendar_data.js">
+            </div>
+            <div class="github-commit-msg" id="ghCommitMsgPreview"></div>
+        </div>
+
+        <div class="progress-bar" id="ghProgressBar" style="display:none">
+            <div class="progress-fill" id="ghFill"></div>
+        </div>
+        <div class="fetch-log" id="ghLog" style="display:none;max-height:160px"></div>
+
+        <div class="fetch-modal-btns">
+            <button class="btn btn-github" id="ghCommitBtn" onclick="runGithubCommit()">🚀 Commit &amp; Push</button>
+            <button class="btn btn-danger" onclick="closeGithubModal()">✕ Close</button>
+        </div>
+
+        <p style="font-size:0.62rem;opacity:0.35;margin-top:12px;text-align:center;line-height:1.6;">
+            Your token is never stored to disk or sent anywhere except api.github.com.
+        </p>
+    </div>
+</div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Data must load before editor.js -->
+    <script src="../assets/calendar_data.js"></script>
+    <script src="editor.js"></script>
+
+</body>
+</html>
