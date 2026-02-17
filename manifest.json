@@ -1,6 +1,6 @@
 {
-  "name": "STAGING - 365 Days",
-  "short_name": "STAGING",
+  "name": "365 Days",
+  "short_name": "365",
   "start_url": "./index.html",
   "description": "A year of songs for Isabella",
   "display": "standalone",
