@@ -1441,7 +1441,7 @@ const loveData = {
     },
     "day97": {
         "title": "Day 97",
-        "message": "",
+        "message": "Heaven's gonna have to wait because I could just be in your arms instead :)",
         "src": "https://embed.music.apple.com/us/song/heaven-can-wait/1297080811",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/heaven-can-wait/1297080811\"></iframe>",
         "PID": "9BE2A619859B9EFE",
