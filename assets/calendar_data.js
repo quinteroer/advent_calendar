@@ -177,7 +177,7 @@ const loveData = {
             "matched_artist": "Fleetwood Mac",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day13": {
         "title": "Day 13",
@@ -192,7 +192,7 @@ const loveData = {
             "matched_artist": "Fleetwood Mac",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day14": {
         "title": "Day 14",
@@ -207,7 +207,7 @@ const loveData = {
             "matched_artist": "The Beatles",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day15": {
         "title": "Day 15",
@@ -222,7 +222,7 @@ const loveData = {
             "matched_artist": "Stephen Sanchez",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day16": {
         "title": "Day 16",
@@ -237,7 +237,7 @@ const loveData = {
             "matched_artist": "blink-182",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day17": {
         "title": "Day 17",
@@ -252,7 +252,7 @@ const loveData = {
             "matched_artist": "The Righteous Brothers",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day18": {
         "title": "Day 18",
@@ -267,7 +267,7 @@ const loveData = {
             "matched_artist": "All Time Low",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day19": {
         "title": "Day 19",
@@ -282,7 +282,7 @@ const loveData = {
             "matched_artist": "The Temptations",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day20": {
         "title": "Day 20",
@@ -297,7 +297,7 @@ const loveData = {
             "matched_artist": "blink-182",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day21": {
         "title": "Day 21",
@@ -312,7 +312,7 @@ const loveData = {
             "matched_artist": "Saja Boys, Andrew Choi, Neckwav, Danny Chung, Kevin Woo, samUIL Lee & KPop Demon Hunters Cast",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day22": {
         "title": "Day 22",
@@ -327,7 +327,7 @@ const loveData = {
             "matched_artist": "Nick Jonas",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day23": {
         "title": "Day 23",
@@ -342,7 +342,7 @@ const loveData = {
             "matched_artist": "Chris Lane",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day24": {
         "title": "Day 24",
@@ -357,7 +357,7 @@ const loveData = {
             "matched_artist": "+44",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day25": {
         "title": "Day 25",
@@ -372,7 +372,7 @@ const loveData = {
             "matched_artist": "Taylor Swift",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day26": {
         "title": "Day 26",
@@ -387,7 +387,7 @@ const loveData = {
             "matched_artist": "Tim McGraw",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day27": {
         "title": "Day 27",
@@ -402,7 +402,7 @@ const loveData = {
             "matched_artist": "Sum 41",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day28": {
         "title": "Day 28",
@@ -417,7 +417,7 @@ const loveData = {
             "matched_artist": "One Direction",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day29": {
         "title": "Day 29",
@@ -432,7 +432,7 @@ const loveData = {
             "matched_artist": "The Beatles",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day30": {
         "title": "Day 30",
@@ -447,7 +447,7 @@ const loveData = {
             "matched_artist": "Justin Moore",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day31": {
         "title": "Day 31",
@@ -462,7 +462,7 @@ const loveData = {
             "matched_artist": "Bruno Mars",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day32": {
         "title": "Day 32",
@@ -477,7 +477,7 @@ const loveData = {
             "matched_artist": "Kate Bush",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day33": {
         "title": "Day 33",
@@ -492,7 +492,7 @@ const loveData = {
             "matched_artist": "The Weeknd",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day34": {
         "title": "Day 34",
@@ -507,7 +507,7 @@ const loveData = {
             "matched_artist": "John Legend",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day35": {
         "title": "Day 35",
@@ -522,7 +522,7 @@ const loveData = {
             "matched_artist": "Good Charlotte",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day36": {
         "title": "Day 36",
@@ -537,7 +537,7 @@ const loveData = {
             "matched_artist": "Shawn Mendes",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day37": {
         "title": "Day 37",
@@ -552,7 +552,7 @@ const loveData = {
             "matched_artist": "Taylor Swift",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day38": {
         "title": "Day 38",
@@ -567,7 +567,7 @@ const loveData = {
             "matched_artist": "Thomas Rhett",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day39": {
         "title": "Day 39",
@@ -582,7 +582,7 @@ const loveData = {
             "matched_artist": "blink-182",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day40": {
         "title": "Day 40",
@@ -597,7 +597,7 @@ const loveData = {
             "matched_artist": "blink-182",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day41": {
         "title": "Day 41",
@@ -612,7 +612,7 @@ const loveData = {
             "matched_artist": "We the Kings",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day42": {
         "title": "Day 42",
@@ -627,7 +627,7 @@ const loveData = {
             "matched_artist": "BOYS LIKE GIRLS",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day43": {
         "title": "Day 43",
@@ -642,7 +642,7 @@ const loveData = {
             "matched_artist": "We the Kings",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day44": {
         "title": "Day 44",
@@ -657,7 +657,7 @@ const loveData = {
             "matched_artist": "Christina Perri",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day45": {
         "title": "Day 45",
@@ -672,7 +672,7 @@ const loveData = {
             "matched_artist": "blink-182",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day46": {
         "title": "Day 46",
@@ -687,7 +687,7 @@ const loveData = {
             "matched_artist": "Beastie Boys",
             "match_quality": "Low Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day47": {
         "title": "Day 47",
@@ -702,7 +702,7 @@ const loveData = {
             "matched_artist": "Chris Young",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day48": {
         "title": "Day 48",
@@ -717,7 +717,7 @@ const loveData = {
             "matched_artist": "Tony Ann",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day49": {
         "title": "Day 49",
@@ -732,7 +732,7 @@ const loveData = {
             "matched_artist": "George Michael",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day50": {
         "title": "Day 50",
@@ -747,7 +747,7 @@ const loveData = {
             "matched_artist": "Michael Jackson",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day51": {
         "title": "Day 51",
@@ -762,7 +762,7 @@ const loveData = {
             "matched_artist": "Taylor Swift",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day52": {
         "title": "Day 52",
@@ -777,7 +777,7 @@ const loveData = {
             "matched_artist": "We the Kings",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day53": {
         "title": "Day 53",
@@ -792,7 +792,7 @@ const loveData = {
             "matched_artist": "blink-182",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day54": {
         "title": "Day 54",
@@ -807,7 +807,7 @@ const loveData = {
             "matched_artist": "Tucker Wetmore",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day55": {
         "title": "Day 55",
@@ -822,7 +822,7 @@ const loveData = {
             "matched_artist": "Cody Johnson & Carrie Underwood",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day56": {
         "title": "Day 56",
@@ -837,7 +837,7 @@ const loveData = {
             "matched_artist": "Chris Stapleton",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day57": {
         "title": "Day 57",
@@ -852,7 +852,7 @@ const loveData = {
             "matched_artist": "The Dreggs",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day58": {
         "title": "Day 58",
@@ -867,7 +867,7 @@ const loveData = {
             "matched_artist": "Harry Styles",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day59": {
         "title": "Day 59",
@@ -882,7 +882,7 @@ const loveData = {
             "matched_artist": "Journey",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day60": {
         "title": "Day 60",
@@ -897,7 +897,7 @@ const loveData = {
             "matched_artist": "The Cranberries",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day61": {
         "title": "Day 61",
@@ -912,7 +912,7 @@ const loveData = {
             "matched_artist": "Taylor Swift",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day62": {
         "title": "Day 62",
@@ -927,7 +927,7 @@ const loveData = {
             "matched_artist": "Gareth",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day63": {
         "title": "Day 63",
@@ -942,7 +942,7 @@ const loveData = {
             "matched_artist": "Dylan Scott",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day64": {
         "title": "Day 64",
@@ -957,7 +957,7 @@ const loveData = {
             "matched_artist": "Blake Shelton",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day65": {
         "title": "Day 65",
@@ -972,7 +972,7 @@ const loveData = {
             "matched_artist": "Good Charlotte",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day66": {
         "title": "Day 66",
@@ -987,7 +987,7 @@ const loveData = {
             "matched_artist": "Ella Langley & Riley Green",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day67": {
         "title": "Day 67",
@@ -1002,7 +1002,7 @@ const loveData = {
             "matched_artist": "Avril Lavigne",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day68": {
         "title": "Day 68",
@@ -1017,7 +1017,7 @@ const loveData = {
             "matched_artist": "Tai Verdes",
             "match_quality": "Low Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day69": {
         "title": "Day 69",
@@ -1032,7 +1032,7 @@ const loveData = {
             "matched_artist": "We the Kings",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day70": {
         "title": "Day 70",
@@ -1047,7 +1047,7 @@ const loveData = {
             "matched_artist": "Taylor Swift",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day71": {
         "title": "Day 71",
@@ -1062,7 +1062,7 @@ const loveData = {
             "matched_artist": "Harry Styles",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day72": {
         "title": "Day 72",
@@ -1077,7 +1077,7 @@ const loveData = {
             "matched_artist": "Jordan Davis",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day73": {
         "title": "Day 73",
@@ -1092,7 +1092,7 @@ const loveData = {
             "matched_artist": "One Direction",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day74": {
         "title": "Day 74",
@@ -1107,7 +1107,7 @@ const loveData = {
             "matched_artist": "One Direction",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day75": {
         "title": "Day 75",
@@ -1122,7 +1122,7 @@ const loveData = {
             "matched_artist": "Ed Sheeran",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day76": {
         "title": "Day 76",
@@ -1137,7 +1137,7 @@ const loveData = {
             "matched_artist": "Angels & Airwaves",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day77": {
         "title": "Day 77",
@@ -1152,7 +1152,7 @@ const loveData = {
             "matched_artist": "Taylor Swift",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day78": {
         "title": "Day 78",
@@ -1167,7 +1167,7 @@ const loveData = {
             "matched_artist": "One Direction",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day79": {
         "title": "Day 79",
@@ -1182,7 +1182,7 @@ const loveData = {
             "matched_artist": "Berlin",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day80": {
         "title": "Day 80",
@@ -1197,7 +1197,7 @@ const loveData = {
             "matched_artist": "Harry Styles",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day81": {
         "title": "Day 81",
@@ -1212,7 +1212,7 @@ const loveData = {
             "matched_artist": "Ed Sheeran",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day82": {
         "title": "Day 82",
@@ -1227,7 +1227,7 @@ const loveData = {
             "matched_artist": "One Direction",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day83": {
         "title": "Day 83",
@@ -1242,7 +1242,7 @@ const loveData = {
             "matched_artist": "The Beatles",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day84": {
         "title": "Day 84",
@@ -1257,7 +1257,7 @@ const loveData = {
             "matched_artist": "Teddy Swims",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day85": {
         "title": "Day 85",
@@ -1272,7 +1272,7 @@ const loveData = {
             "matched_artist": "Harry Styles",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day86": {
         "title": "Day 86",
@@ -1287,7 +1287,7 @@ const loveData = {
             "matched_artist": "Diana Ross",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day87": {
         "title": "Day 87",
@@ -1302,7 +1302,7 @@ const loveData = {
             "matched_artist": "Michael Giacchino",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day88": {
         "title": "Day 88",
@@ -1317,7 +1317,7 @@ const loveData = {
             "matched_artist": "Fleetwood Mac",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day89": {
         "title": "Day 89",
@@ -1332,7 +1332,7 @@ const loveData = {
             "matched_artist": "Queen",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day90": {
         "title": "Day 90",
@@ -1347,7 +1347,7 @@ const loveData = {
             "matched_artist": "Harry Styles",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day91": {
         "title": "Day 91",
@@ -1362,7 +1362,7 @@ const loveData = {
             "matched_artist": "Michelle Branch",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day92": {
         "title": "Day 92",
@@ -1377,7 +1377,7 @@ const loveData = {
             "matched_artist": "blink-182",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day93": {
         "title": "Day 93",
@@ -1392,7 +1392,7 @@ const loveData = {
             "matched_artist": "Thomas Rhett",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day94": {
         "title": "Day 94",
@@ -1407,7 +1407,7 @@ const loveData = {
             "matched_artist": "Roy Orbison",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day95": {
         "title": "Day 95",
@@ -1437,11 +1437,11 @@ const loveData = {
             "matched_artist": "Coldplay",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day97": {
         "title": "Day 97",
-        "message": "Heaven's gonna have to wait because I could just be in your arms instead :)",
+        "message": "",
         "src": "https://embed.music.apple.com/us/song/heaven-can-wait/1297080811",
         "song_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/us/song/heaven-can-wait/1297080811\"></iframe>",
         "PID": "9BE2A619859B9EFE",
@@ -1452,7 +1452,7 @@ const loveData = {
             "matched_artist": "We the Kings",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day98": {
         "title": "Day 98",
@@ -1467,7 +1467,7 @@ const loveData = {
             "matched_artist": "Bruno Major",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day99": {
         "title": "Day 99",
@@ -1482,7 +1482,7 @@ const loveData = {
             "matched_artist": "blink-182",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day100": {
         "title": "Day 100",
@@ -1497,7 +1497,7 @@ const loveData = {
             "matched_artist": "Ed Sheeran",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day101": {
         "title": "Day 101",
@@ -1512,7 +1512,7 @@ const loveData = {
             "matched_artist": "Taylor Swift",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day102": {
         "title": "Day 102",
@@ -1527,7 +1527,7 @@ const loveData = {
             "matched_artist": "Kane Brown",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day103": {
         "title": "Day 103",
@@ -1542,7 +1542,7 @@ const loveData = {
             "matched_artist": "BOYS LIKE GIRLS",
             "match_quality": "High Confidence"
         },
-        "pinned": false
+        "pinned": true
     },
     "day104": {
         "title": "Day 104",
